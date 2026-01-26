@@ -1,0 +1,21 @@
+{
+  "deps": [
+    "include:[noncopyable.h]"
+  ],
+  "file": "../Socket.h",
+  "hash": "896c44134a269ca70c05b610152729b92d5116d3f2510813f1222d61c97e5d3e",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "Socket"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.475901",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[CurrentThread.h]",
+    "include:[sys/syscall.h]",
+    "include:[unistd.h]"
+  ],
+  "file": "../CurrentThread.cpp",
+  "hash": "d2dec2617dd7db2d4773157a089150d71d951807003674344742de46e87f1d4c",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "cacheTid"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.130257",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,22 @@
+{
+  "deps": [
+    "include:[TcpServer.h]",
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[Acceptor.h]",
+    "include:[Socket.h]",
+    "include:[stdio.h]",
+    "include:[assert.h]",
+    "include:[functional]"
+  ],
+  "file": "../TcpServer.cpp",
+  "hash": "d75835b9e2f3709d2c66a0ae979d900f7a8ba6ae26c4a391ebc52bf3fca2a4b8",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-26T08:02:00.482850",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

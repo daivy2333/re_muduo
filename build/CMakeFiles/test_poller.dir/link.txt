@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -std=c++17 CMakeFiles/test_poller.dir/tests/test_poller.cpp.o -o ../bin/test_poller  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib ../lib/libre_muduo.so -lpthread 

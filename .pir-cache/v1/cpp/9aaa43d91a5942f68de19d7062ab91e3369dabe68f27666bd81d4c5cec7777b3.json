@@ -1,0 +1,51 @@
+{
+  "deps": [
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[InetAddress.h]",
+    "include:[Timestamp.h]",
+    "include:[iostream]",
+    "include:[string]",
+    "include:[unistd.h]",
+    "include:[sys/socket.h]",
+    "include:[arpa/inet.h]"
+  ],
+  "file": "../tests/test_tcpconnection.cpp",
+  "hash": "9aaa43d91a5942f68de19d7062ab91e3369dabe68f27666bd81d4c5cec7777b3",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "onConnection"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "onMessage"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "onWriteComplete"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "createSocketPair"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.498424",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

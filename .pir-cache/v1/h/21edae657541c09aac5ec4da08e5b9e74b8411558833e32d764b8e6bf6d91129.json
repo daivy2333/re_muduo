@@ -1,0 +1,16 @@
+{
+  "deps": [
+    "include:[iostream]",
+    "include:[string]"
+  ],
+  "file": "../Timestamp.h",
+  "hash": "21edae657541c09aac5ec4da08e5b9e74b8411558833e32d764b8e6bf6d91129",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.131171",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,37 @@
+{
+  "deps": [
+    "include:[CurrentThread.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[vector]"
+  ],
+  "file": "../tests/test_currentthread.cpp",
+  "hash": "dde712cfceefca9aad0e383127bc36187d638e0a72a4de4f9eb0d30a80df83c0",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_current_thread_tid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multiple_threads"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.142035",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

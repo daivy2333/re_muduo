@@ -1,0 +1,15 @@
+{
+  "deps": [
+    "include:[Logger.h]"
+  ],
+  "file": "../Logger.cpp",
+  "hash": "92d21e886a7e1463de5aad21779692a2d17dbe1a49461303d3d606e1aeb2de2c",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-24T08:20:04.683074",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,25 @@
+{
+  "deps": [
+    "include:[iostream]",
+    "include:[string]",
+    "include:[cstdlib]"
+  ],
+  "file": "../tests/run_all_tests.cpp",
+  "hash": "b34d293528a9092378af04a9035499a48ba9a9e5002b730373a55297bf5fbf40",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.143676",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,16 @@
+{
+  "deps": [
+    "include:[Poller.h]",
+    "include:[Eventloop.h]"
+  ],
+  "file": "../Poller.cpp",
+  "hash": "d265871fae968792ff8032da7710b8b830c94279e82e532db50440bab5425c66",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-25T08:18:32.951364",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

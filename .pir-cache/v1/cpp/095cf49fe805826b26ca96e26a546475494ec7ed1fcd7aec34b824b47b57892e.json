@@ -1,0 +1,28 @@
+{
+  "deps": [
+    "include:[Acceptor.h]",
+    "include:[Eventloop.h]",
+    "include:[InetAddress.h]",
+    "include:[Logger.h]",
+    "include:[errno.h]",
+    "include:[unistd.h]",
+    "include:[sys/types.h]",
+    "include:[sys/socket.h]"
+  ],
+  "file": "../Acceptor.cpp",
+  "hash": "095cf49fe805826b26ca96e26a546475494ec7ed1fcd7aec34b824b47b57892e",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "createNonblockingOrDie"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.473622",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

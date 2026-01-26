@@ -1,0 +1,13 @@
+{
+  "deps": [],
+  "file": "../noncopyable.h",
+  "hash": "b6004dfaf93ef5343da20fa0ac0db8535c880b5ebc95cda455cb549775773078",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.127296",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

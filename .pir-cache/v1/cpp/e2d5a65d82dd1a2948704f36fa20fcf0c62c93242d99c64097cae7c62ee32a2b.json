@@ -1,0 +1,72 @@
+{
+  "deps": [
+    "include:[TcpServer.h]",
+    "include:[Eventloop.h]",
+    "include:[InetAddress.h]",
+    "include:[Timestamp.h]",
+    "include:[TcpConnection.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[chrono]",
+    "include:[string]"
+  ],
+  "file": "../tests/test_tcpserver.cpp",
+  "hash": "e2d5a65d82dd1a2948704f36fa20fcf0c62c93242d99c64097cae7c62ee32a2b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_basic_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multithread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_connection_management"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_init_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.503198",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[Buffer.h]",
+    "include:[sys/uio.h]",
+    "include:[errno.h]",
+    "include:[unistd.h]"
+  ],
+  "file": "../Buffer.cpp",
+  "hash": "cd0e6cb005fb85fb922ab2d376292804ac5c1c336aaa229850bbdb90ee8a9bed",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-26T08:02:00.493827",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

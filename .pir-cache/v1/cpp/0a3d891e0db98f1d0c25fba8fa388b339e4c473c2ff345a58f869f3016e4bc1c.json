@@ -1,0 +1,16 @@
+{
+  "deps": [
+    "include:[EventLoopThread.h]",
+    "include:[Eventloop.h]"
+  ],
+  "file": "../EventLoopThread.cpp",
+  "hash": "0a3d891e0db98f1d0c25fba8fa388b339e4c473c2ff345a58f869f3016e4bc1c",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.131688",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

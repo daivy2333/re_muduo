@@ -1,0 +1,27 @@
+{
+  "deps": [
+    "include:[atomic]",
+    "include:[functional]",
+    "include:[memory]",
+    "include:[string]",
+    "include:[thread]",
+    "include:[unistd.h]",
+    "include:[noncopyable.h]"
+  ],
+  "file": "../Thread.h",
+  "hash": "c74bee70525c644c5fb457d87a40a02d84fd830a265dffe83b5d38b3d0fd2b21",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "numCreated"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.126316",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

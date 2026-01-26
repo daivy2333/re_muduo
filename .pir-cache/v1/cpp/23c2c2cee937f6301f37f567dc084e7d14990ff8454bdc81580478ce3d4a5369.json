@@ -1,0 +1,52 @@
+{
+  "deps": [
+    "include:[Poller.h]",
+    "include:[EpollPoller.h]",
+    "include:[Eventloop.h]",
+    "include:[Channel.h]",
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[unistd.h]",
+    "include:[sys/eventfd.h]"
+  ],
+  "file": "../tests/test_poller.cpp",
+  "hash": "23c2c2cee937f6301f37f567dc084e7d14990ff8454bdc81580478ce3d4a5369",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_poller_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_epollpoller_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_epollpoller_channel_operations"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_epollpoller_poll"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.144811",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

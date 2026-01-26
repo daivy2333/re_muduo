@@ -1,0 +1,26 @@
+{
+  "deps": [
+    "include:[noncopyable.h]",
+    "include:[functional]",
+    "include:[string]",
+    "include:[vector]",
+    "include:[memory]",
+    "include:[Eventloop.h]"
+  ],
+  "file": "../EventLoopThreadPool.h",
+  "hash": "217b8cec8ba7e43cc3b01dc0ac8c14206a2e2b6447b14640447f2becf89741bd",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setThreadNUm"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.127161",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

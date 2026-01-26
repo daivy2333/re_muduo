@@ -1,0 +1,45 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Acceptor.h]",
+    "include:[InetAddress.h]",
+    "include:[noncopyable.h]",
+    "include:[functional]",
+    "include:[string]",
+    "include:[EventLoopThreadPool.h]",
+    "include:[Callbacks.h]",
+    "include:[atomic]",
+    "include:[unordered_map]"
+  ],
+  "file": "../TcpServer.h",
+  "hash": "3db19c560a7c47687eb99bcc3a71e2486497bccba6ae7d328737e823ff625f63",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setThreadInitCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setConnectionCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setMessageCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setWriteCompleteCallback"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.479055",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

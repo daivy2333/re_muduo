@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[arpa/inet.h]",
+    "include:[netinet/in.h]",
+    "include:[string]"
+  ],
+  "file": "../InetAddress.h",
+  "hash": "65ffb61af128fee6308a52f0dd9682654d5c8a33d7e30cd9838f391b56c19709",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "InetAddress"
+    }
+  ],
+  "timestamp": "2026-01-24T08:20:04.684084",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

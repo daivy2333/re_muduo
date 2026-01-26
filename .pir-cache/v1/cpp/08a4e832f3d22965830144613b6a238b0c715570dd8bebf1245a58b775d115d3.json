@@ -1,0 +1,22 @@
+{
+  "deps": [
+    "include:[Socket.h]",
+    "include:[InetAddress.h]",
+    "include:[Logger.h]",
+    "include:[unistd.h]",
+    "include:[sys/socket.h]",
+    "include:[sys/types.h]",
+    "include:[netinet/tcp.h]",
+    "include:[string.h]"
+  ],
+  "file": "../Socket.cpp",
+  "hash": "08a4e832f3d22965830144613b6a238b0c715570dd8bebf1245a58b775d115d3",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-26T08:02:00.472541",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

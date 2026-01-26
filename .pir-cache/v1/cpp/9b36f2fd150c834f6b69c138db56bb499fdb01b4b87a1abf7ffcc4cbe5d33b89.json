@@ -1,0 +1,25 @@
+{
+  "deps": [
+    "include:[Thread.h]",
+    "include:[cstdio]",
+    "include:[sstream]",
+    "include:[sys/syscall.h]",
+    "include:[sys/types.h]"
+  ],
+  "file": "../Thread.cpp",
+  "hash": "9b36f2fd150c834f6b69c138db56bb499fdb01b4b87a1abf7ffcc4cbe5d33b89",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "gettid"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.127852",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

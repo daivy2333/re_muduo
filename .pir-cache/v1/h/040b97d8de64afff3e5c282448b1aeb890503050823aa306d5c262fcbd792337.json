@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[unordered_map]",
+    "include:[vector]",
+    "include:[noncopyable.h]",
+    "include:[Timestamp.h]"
+  ],
+  "file": "../Poller.h",
+  "hash": "040b97d8de64afff3e5c282448b1aeb890503050823aa306d5c262fcbd792337",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.130476",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

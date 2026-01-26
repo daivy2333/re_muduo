@@ -1,0 +1,84 @@
+{
+  "deps": [
+    "include:[Thread.h]",
+    "include:[CurrentThread.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[vector]",
+    "include:[chrono]",
+    "include:[atomic]"
+  ],
+  "file": "../tests/test_thread.cpp",
+  "hash": "8a59b1b756522861b713eab00c42a08f916af1def6bed7f4ed904af93f6ebe3b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_id"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_default_naming"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_concurrent_threads"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_count"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t1"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t2"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multiple_join"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.141114",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

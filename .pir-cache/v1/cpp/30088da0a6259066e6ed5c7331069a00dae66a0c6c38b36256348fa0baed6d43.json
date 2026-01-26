@@ -1,0 +1,59 @@
+{
+  "deps": [
+    "include:[EventLoopThreadPool.h]",
+    "include:[Eventloop.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[chrono]",
+    "include:[atomic]",
+    "include:[thread]"
+  ],
+  "file": "../tests/test_eventloopthreadpool.cpp",
+  "hash": "30088da0a6259066e6ed5c7331069a00dae66a0c6c38b36256348fa0baed6d43",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_basic_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_get_all_loops"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_get_next_loop"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_init_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_run_in_multiple_loops"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_concurrent_get_loop"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.135925",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

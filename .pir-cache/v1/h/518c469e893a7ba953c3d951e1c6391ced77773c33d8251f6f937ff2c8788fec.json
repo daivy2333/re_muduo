@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[Poller.h]",
+    "include:[vector]",
+    "include:[sys/epoll.h]"
+  ],
+  "file": "../EpollPoller.h",
+  "hash": "518c469e893a7ba953c3d951e1c6391ced77773c33d8251f6f937ff2c8788fec",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-24T13:12:29.582907",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

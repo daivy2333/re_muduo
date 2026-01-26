@@ -1,0 +1,40 @@
+{
+  "deps": [
+    "include:[InetAddress.h]",
+    "include:[iostream]",
+    "include:[cassert]"
+  ],
+  "file": "../tests/test_inetaddress.cpp",
+  "hash": "8fc61a191bb4bae0bb64b6de99aacd0e63eddb78dfebd1c2a8b1a832d7727fae",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_inetaddress_with_port"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_inetaddress_with_ip_and_port"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_inetaddress_get_sockaddr"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.136693",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

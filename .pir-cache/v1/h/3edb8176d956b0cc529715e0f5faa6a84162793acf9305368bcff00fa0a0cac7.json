@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[iostream]",
+    "include:[string]",
+    "include:[noncopyable.h]"
+  ],
+  "file": "../Logger.h",
+  "hash": "3edb8176d956b0cc529715e0f5faa6a84162793acf9305368bcff00fa0a0cac7",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.128193",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

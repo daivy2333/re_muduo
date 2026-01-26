@@ -1,0 +1,40 @@
+{
+  "deps": [
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[cassert]"
+  ],
+  "file": "../tests/test_logger.cpp",
+  "hash": "68b1217d8bc768aac332b7aac484bad78c5444338c2f2c28d7c9a999aab0547e",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_logger_instance"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_logger_log_levels"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_logger_set_log_level"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.138479",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

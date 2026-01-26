@@ -1,0 +1,20 @@
+{
+  "deps": [
+    "include:[noncopyable.h]",
+    "include:[functional]",
+    "include:[mutex]",
+    "include:[condition_variable]",
+    "include:[Eventloop.h]",
+    "include:[Thread.h]"
+  ],
+  "file": "../EventLoopThread.h",
+  "hash": "44e99e36a7fc68fe432b55db5efc86c5e9101c73ad29de48ced0add9d9753467",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.126482",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

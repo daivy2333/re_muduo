@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -std=c++17 CMakeFiles/latency_test.dir/latency_test.cpp.o -o ../../bin/benchmark/latency_test  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib ../../lib/libbenchmark_base.a ../../lib/libre_muduo.so 

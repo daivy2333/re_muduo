@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[noncopyable.h]",
+    "include:[functional]",
+    "include:[Timestamp.h]",
+    "include:[memory]"
+  ],
+  "file": "../Channel.h",
+  "hash": "8244a6ad355f8e0952fdb3e84408a678c29e7388999950ba48d018e11c5c2325",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-01-24T08:20:04.682919",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

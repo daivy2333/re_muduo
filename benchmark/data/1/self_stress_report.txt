@@ -1,0 +1,13 @@
+=== Self Stress Test Report ===
+Test Time: 1769430211710365370
+Port: 8888
+Clients: 5000
+Duration: 60s
+
+=== Test Results ===
+Total Requests: 10296022
+Failed Requests: 0
+Total Bytes: 337380048896 bytes
+Duration: 67.7986s
+QPS: 151862
+Throughput: 4745.68 MB/s

@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "file": "../CurrentThread.h",
+  "hash": "4c9fcd98d32bee614d7566b5794a51db40e84ecbdb751dd6c6a702199917af8d",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "tid"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.126082",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

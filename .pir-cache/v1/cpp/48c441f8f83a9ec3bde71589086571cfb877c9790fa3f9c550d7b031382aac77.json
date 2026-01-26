@@ -1,0 +1,46 @@
+{
+  "deps": [
+    "include:[Channel.h]",
+    "include:[Eventloop.h]",
+    "include:[Logger.h]",
+    "include:[cassert]",
+    "include:[cerrno]",
+    "include:[iostream]",
+    "include:[sys/eventfd.h]",
+    "include:[thread]",
+    "include:[unistd.h]"
+  ],
+  "file": "../tests/test_channel.cpp",
+  "hash": "48c441f8f83a9ec3bde71589086571cfb877c9790fa3f9c550d7b031382aac77",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_events"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_callbacks"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.137456",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

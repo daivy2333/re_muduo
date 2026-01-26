@@ -1,0 +1,72 @@
+{
+  "deps": [
+    "include:[Socket.h]",
+    "include:[InetAddress.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[unistd.h]",
+    "include:[sys/socket.h]",
+    "include:[netinet/in.h]",
+    "include:[netinet/tcp.h]",
+    "include:[arpa/inet.h]",
+    "include:[strings.h]"
+  ],
+  "file": "../tests/test_socket.cpp",
+  "hash": "3dca964105875576fed4f75b3e21b323cfaf58db03e32d5b0518f3ae8086375a",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_bind"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_listen"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_accept"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_tcp_nodelay"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_addr"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_port"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_keep_alive"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_shutdown_write"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.503928",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

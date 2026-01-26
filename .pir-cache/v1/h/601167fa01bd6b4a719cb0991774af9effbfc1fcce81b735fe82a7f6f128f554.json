@@ -1,0 +1,74 @@
+{
+  "deps": [
+    "include:[string]",
+    "include:[vector]",
+    "include:[algorithm]",
+    "include:[cstring]"
+  ],
+  "file": "../Buffer.h",
+  "hash": "601167fa01bd6b4a719cb0991774af9effbfc1fcce81b735fe82a7f6f128f554",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "Buffer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "retrieve"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "retrieveUntil"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "retrieveAll"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "append"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "append"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "append"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "prepend"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "shrink"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "makeSpace"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "ensureWritableBytes"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.481993",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

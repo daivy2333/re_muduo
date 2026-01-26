@@ -1,0 +1,45 @@
+{
+  "deps": [
+    "include:[Timestamp.h]",
+    "include:[iostream]",
+    "include:[cassert]"
+  ],
+  "file": "../tests/test_timestamp.cpp",
+  "hash": "0fe3383921bbf0025088b476d0dda03de17e735b794cde1599eec8b6bf54227f",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_default_constructor"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_constructor_with_microseconds"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_now"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_to_string"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.139114",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

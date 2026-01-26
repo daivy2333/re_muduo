@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[Channel.h]",
+    "include:[Eventloop.h]",
+    "include:[sys/epoll.h]",
+    "include:[iostream]"
+  ],
+  "file": "../Channel.cpp",
+  "hash": "410371f482c9e7c64613ea0afde6857b26ba14ada279c53678a94ed1e01e3e26",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-26T04:19:39.135231",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

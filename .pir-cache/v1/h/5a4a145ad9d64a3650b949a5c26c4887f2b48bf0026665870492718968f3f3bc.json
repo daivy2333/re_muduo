@@ -1,0 +1,24 @@
+{
+  "deps": [
+    "include:[noncopyable.h]",
+    "include:[Socket.h]",
+    "include:[Channel.h]",
+    "include:[functional]"
+  ],
+  "file": "../Acceptor.h",
+  "hash": "5a4a145ad9d64a3650b949a5c26c4887f2b48bf0026665870492718968f3f3bc",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setNewConnectionCallback"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.484980",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

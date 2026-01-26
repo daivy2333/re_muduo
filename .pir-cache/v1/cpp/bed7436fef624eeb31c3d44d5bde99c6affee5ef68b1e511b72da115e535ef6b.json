@@ -1,0 +1,45 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Channel.h]",
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[unistd.h]",
+    "include:[sys/eventfd.h]"
+  ],
+  "file": "../tests/test_eventloop.cpp",
+  "hash": "bed7436fef624eeb31c3d44d5bde99c6affee5ef68b1e511b72da115e535ef6b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_basic"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_channel"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_runinloop"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.140435",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

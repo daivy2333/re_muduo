@@ -1,0 +1,16 @@
+{
+  "deps": [
+    "include:[Poller.h]",
+    "include:[stdlib.h]"
+  ],
+  "file": "../DefaultPoller.cpp",
+  "hash": "58b5bd660e391515e2d516fb0e1762c03b3bd2f33b9b802af05965a960fe1318",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-01-24T13:12:29.580126",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,79 @@
+{
+  "deps": [
+    "include:[functional]",
+    "include:[memory]",
+    "include:[noncopyable.h]",
+    "include:[Timestamp.h]"
+  ],
+  "file": "../Channel.h",
+  "hash": "d90f56b8de58e2c671a00610d20717586a71463194d2ffd54e3ad4aeca6aa6e1",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setReadCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setWriteCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setCloseCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setErrorCallback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setRevents"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "index"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setIndex"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "enableReading"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "disableReading"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "enableWriting"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "disableWriting"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "disableAll"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.128500",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

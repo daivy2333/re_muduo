@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -std=c++17 CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o -o ../bin/test_tcpserver  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib ../lib/libre_muduo.so -lpthread 

@@ -1,0 +1,29 @@
+{
+  "deps": [
+    "include:[arpa/inet.h]",
+    "include:[netinet/in.h]",
+    "include:[string]",
+    "include:[strings.h]"
+  ],
+  "file": "../InetAddress.h",
+  "hash": "1b5d38880a14d4438f77b8b486dcd8c0cddd05e9385cdc13fb02a46590139e9a",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "InetAddress"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setSockAddr"
+    }
+  ],
+  "timestamp": "2026-01-26T08:02:00.491419",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

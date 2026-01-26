@@ -1,0 +1,26 @@
+{
+  "deps": [
+    "include:[InetAddress.h]",
+    "include:[cstring]",
+    "include:[iostream]",
+    "include:[strings.h]"
+  ],
+  "file": "../InetAddress.cpp",
+  "hash": "2a5252c37af71c45866e78ccd42d60bd6d5a4dc640c5080647b695269beebb04",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-01-26T04:19:39.128003",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}
