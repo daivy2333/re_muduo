@@ -43,7 +43,7 @@ Timestamp EpollPoller::poll(int timeoutMs, ChannelList* activeChannels)
     }
     else if (numEvents == 0)
     {
-        LOG_DEBUG("%s timeout\n", __FUNCTION__);
+        // LOG_DEBUG("%s timeout\n", __FUNCTION__);
     }
     else
     {
