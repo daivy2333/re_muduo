@@ -1,1 +1,1 @@
-/usr/bin/c++  -g -std=c++17 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o -o ../bin/test_thread  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib ../lib/libre_muduo.so -lpthread 
+/usr/bin/c++  -g -std=c++17 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o -o bin/test_thread  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/build/lib lib/libre_muduo.so -lpthread 

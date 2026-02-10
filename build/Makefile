@@ -374,19 +374,6 @@ echo_bench/fast:
 .PHONY : echo_bench/fast
 
 #=============================================================================
-# Target rules for targets named stress_client
-
-# Build rule for target.
-stress_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stress_client
-.PHONY : stress_client
-
-# fast build rule for target.
-stress_client/fast:
-	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/build
-.PHONY : stress_client/fast
-
-#=============================================================================
 # Target rules for targets named latency_test
 
 # Build rule for target.
@@ -398,6 +385,19 @@ latency_test: cmake_check_build_system
 latency_test/fast:
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/latency_test.dir/build.make benchmark/CMakeFiles/latency_test.dir/build
 .PHONY : latency_test/fast
+
+#=============================================================================
+# Target rules for targets named self_stress_test
+
+# Build rule for target.
+self_stress_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 self_stress_test
+.PHONY : self_stress_test
+
+# fast build rule for target.
+self_stress_test/fast:
+	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/build
+.PHONY : self_stress_test/fast
 
 #=============================================================================
 # Target rules for targets named benchmark
@@ -1266,7 +1266,7 @@ help:
 	@echo "... echo_bench"
 	@echo "... latency_test"
 	@echo "... re_muduo"
-	@echo "... stress_client"
+	@echo "... self_stress_test"
 	@echo "... test_acceptor"
 	@echo "... test_buffer"
 	@echo "... test_channel"

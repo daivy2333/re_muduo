@@ -1,1 +1,1 @@
-/usr/bin/c++  -g -std=c++17 CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o -o ../bin/test_timestamp  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib ../lib/libre_muduo.so -lpthread 
+/usr/bin/c++  -g -std=c++17 CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o -o bin/test_timestamp  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/build/lib lib/libre_muduo.so -lpthread 

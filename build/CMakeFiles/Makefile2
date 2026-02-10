@@ -114,8 +114,8 @@ clean: benchmark/clean
 # Recursive "all" directory target.
 benchmark/all: benchmark/CMakeFiles/benchmark_base.dir/all
 benchmark/all: benchmark/CMakeFiles/echo_bench.dir/all
-benchmark/all: benchmark/CMakeFiles/stress_client.dir/all
 benchmark/all: benchmark/CMakeFiles/latency_test.dir/all
+benchmark/all: benchmark/CMakeFiles/self_stress_test.dir/all
 .PHONY : benchmark/all
 
 # Recursive "preinstall" directory target.
@@ -125,8 +125,8 @@ benchmark/preinstall:
 # Recursive "clean" directory target.
 benchmark/clean: benchmark/CMakeFiles/benchmark_base.dir/clean
 benchmark/clean: benchmark/CMakeFiles/echo_bench.dir/clean
-benchmark/clean: benchmark/CMakeFiles/stress_client.dir/clean
 benchmark/clean: benchmark/CMakeFiles/latency_test.dir/clean
+benchmark/clean: benchmark/CMakeFiles/self_stress_test.dir/clean
 benchmark/clean: benchmark/CMakeFiles/benchmark.dir/clean
 .PHONY : benchmark/clean
 
@@ -626,33 +626,6 @@ benchmark/CMakeFiles/echo_bench.dir/clean:
 .PHONY : benchmark/CMakeFiles/echo_bench.dir/clean
 
 #=============================================================================
-# Target rules for target benchmark/CMakeFiles/stress_client.dir
-
-# All Build rule for target.
-benchmark/CMakeFiles/stress_client.dir/all: CMakeFiles/re_muduo.dir/all
-benchmark/CMakeFiles/stress_client.dir/all: benchmark/CMakeFiles/benchmark_base.dir/all
-	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/depend
-	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles --progress-num=28,29 "Built target stress_client"
-.PHONY : benchmark/CMakeFiles/stress_client.dir/all
-
-# Build rule for subdir invocation for target.
-benchmark/CMakeFiles/stress_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 24
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/stress_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 0
-.PHONY : benchmark/CMakeFiles/stress_client.dir/rule
-
-# Convenience name for target.
-stress_client: benchmark/CMakeFiles/stress_client.dir/rule
-.PHONY : stress_client
-
-# clean rule for target.
-benchmark/CMakeFiles/stress_client.dir/clean:
-	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/clean
-.PHONY : benchmark/CMakeFiles/stress_client.dir/clean
-
-#=============================================================================
 # Target rules for target benchmark/CMakeFiles/latency_test.dir
 
 # All Build rule for target.
@@ -680,11 +653,36 @@ benchmark/CMakeFiles/latency_test.dir/clean:
 .PHONY : benchmark/CMakeFiles/latency_test.dir/clean
 
 #=============================================================================
+# Target rules for target benchmark/CMakeFiles/self_stress_test.dir
+
+# All Build rule for target.
+benchmark/CMakeFiles/self_stress_test.dir/all: CMakeFiles/re_muduo.dir/all
+	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles --progress-num=28,29 "Built target self_stress_test"
+.PHONY : benchmark/CMakeFiles/self_stress_test.dir/all
+
+# Build rule for subdir invocation for target.
+benchmark/CMakeFiles/self_stress_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/self_stress_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 0
+.PHONY : benchmark/CMakeFiles/self_stress_test.dir/rule
+
+# Convenience name for target.
+self_stress_test: benchmark/CMakeFiles/self_stress_test.dir/rule
+.PHONY : self_stress_test
+
+# clean rule for target.
+benchmark/CMakeFiles/self_stress_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/clean
+.PHONY : benchmark/CMakeFiles/self_stress_test.dir/clean
+
+#=============================================================================
 # Target rules for target benchmark/CMakeFiles/benchmark.dir
 
 # All Build rule for target.
 benchmark/CMakeFiles/benchmark.dir/all: benchmark/CMakeFiles/echo_bench.dir/all
-benchmark/CMakeFiles/benchmark.dir/all: benchmark/CMakeFiles/stress_client.dir/all
 benchmark/CMakeFiles/benchmark.dir/all: benchmark/CMakeFiles/latency_test.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/benchmark.dir/build.make benchmark/CMakeFiles/benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/benchmark.dir/build.make benchmark/CMakeFiles/benchmark.dir/build
@@ -693,7 +691,7 @@ benchmark/CMakeFiles/benchmark.dir/all: benchmark/CMakeFiles/latency_test.dir/al
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/benchmark.dir/rule

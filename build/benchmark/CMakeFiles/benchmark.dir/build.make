@@ -67,10 +67,8 @@ include benchmark/CMakeFiles/benchmark.dir/compiler_depend.make
 include benchmark/CMakeFiles/benchmark.dir/progress.make
 
 benchmark/CMakeFiles/benchmark: ../bin/benchmark/echo_bench
-benchmark/CMakeFiles/benchmark: ../bin/benchmark/stress_client
 benchmark/CMakeFiles/benchmark: ../bin/benchmark/latency_test
 	cd /home/daivy/projects/muduo_learn/re_muduo/bin/benchmark && echo ===\ Running\ Echo\ Server\ Benchmark\ === && ./echo_bench
-	cd /home/daivy/projects/muduo_learn/re_muduo/bin/benchmark && echo ===\ Running\ Stress\ Client\ === && ./stress_client 127.0.0.1 8888 100 30
 	cd /home/daivy/projects/muduo_learn/re_muduo/bin/benchmark && echo ===\ Running\ Latency\ Test\ === && ./latency_test 127.0.0.1 8888
 
 benchmark: benchmark/CMakeFiles/benchmark

@@ -92,8 +92,8 @@ latency_test_EXTERNAL_OBJECTS =
 
 ../bin/benchmark/latency_test: benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.o
 ../bin/benchmark/latency_test: benchmark/CMakeFiles/latency_test.dir/build.make
-../bin/benchmark/latency_test: ../lib/libbenchmark_base.a
-../bin/benchmark/latency_test: ../lib/libre_muduo.so
+../bin/benchmark/latency_test: lib/libbenchmark_base.a
+../bin/benchmark/latency_test: lib/libre_muduo.so
 ../bin/benchmark/latency_test: benchmark/CMakeFiles/latency_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/benchmark/latency_test"
 	cd /home/daivy/projects/muduo_learn/re_muduo/build/benchmark && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/latency_test.dir/link.txt --verbose=$(VERBOSE)

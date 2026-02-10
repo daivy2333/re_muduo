@@ -108,8 +108,8 @@ echo_bench_EXTERNAL_OBJECTS =
 ../bin/benchmark/echo_bench: benchmark/CMakeFiles/echo_bench.dir/echo_server_bench.cpp.o
 ../bin/benchmark/echo_bench: benchmark/CMakeFiles/echo_bench.dir/throughput_test.cpp.o
 ../bin/benchmark/echo_bench: benchmark/CMakeFiles/echo_bench.dir/build.make
-../bin/benchmark/echo_bench: ../lib/libbenchmark_base.a
-../bin/benchmark/echo_bench: ../lib/libre_muduo.so
+../bin/benchmark/echo_bench: lib/libbenchmark_base.a
+../bin/benchmark/echo_bench: lib/libre_muduo.so
 ../bin/benchmark/echo_bench: benchmark/CMakeFiles/echo_bench.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daivy/projects/muduo_learn/re_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/benchmark/echo_bench"
 	cd /home/daivy/projects/muduo_learn/re_muduo/build/benchmark && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/echo_bench.dir/link.txt --verbose=$(VERBOSE)

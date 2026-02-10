@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "../lib/libre_muduo.pdb"
-  "../lib/libre_muduo.so"
   "CMakeFiles/re_muduo.dir/Acceptor.cpp.o"
   "CMakeFiles/re_muduo.dir/Acceptor.cpp.o.d"
   "CMakeFiles/re_muduo.dir/Buffer.cpp.o"
@@ -39,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/re_muduo.dir/TimerQueue.cpp.o.d"
   "CMakeFiles/re_muduo.dir/Timestamp.cpp.o"
   "CMakeFiles/re_muduo.dir/Timestamp.cpp.o.d"
+  "lib/libre_muduo.pdb"
+  "lib/libre_muduo.so"
 )
 
 # Per-language clean rules from dependency scanning.

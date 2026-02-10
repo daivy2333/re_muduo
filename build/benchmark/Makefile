@@ -155,20 +155,6 @@ echo_bench/fast:
 .PHONY : echo_bench/fast
 
 # Convenience name for target.
-benchmark/CMakeFiles/stress_client.dir/rule:
-	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/stress_client.dir/rule
-.PHONY : benchmark/CMakeFiles/stress_client.dir/rule
-
-# Convenience name for target.
-stress_client: benchmark/CMakeFiles/stress_client.dir/rule
-.PHONY : stress_client
-
-# fast build rule for target.
-stress_client/fast:
-	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/build
-.PHONY : stress_client/fast
-
-# Convenience name for target.
 benchmark/CMakeFiles/latency_test.dir/rule:
 	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/latency_test.dir/rule
 .PHONY : benchmark/CMakeFiles/latency_test.dir/rule
@@ -181,6 +167,20 @@ latency_test: benchmark/CMakeFiles/latency_test.dir/rule
 latency_test/fast:
 	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/latency_test.dir/build.make benchmark/CMakeFiles/latency_test.dir/build
 .PHONY : latency_test/fast
+
+# Convenience name for target.
+benchmark/CMakeFiles/self_stress_test.dir/rule:
+	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/self_stress_test.dir/rule
+.PHONY : benchmark/CMakeFiles/self_stress_test.dir/rule
+
+# Convenience name for target.
+self_stress_test: benchmark/CMakeFiles/self_stress_test.dir/rule
+.PHONY : self_stress_test
+
+# fast build rule for target.
+self_stress_test/fast:
+	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/build
+.PHONY : self_stress_test/fast
 
 # Convenience name for target.
 benchmark/CMakeFiles/benchmark.dir/rule:
@@ -268,29 +268,29 @@ latency_test.cpp.s:
 	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/latency_test.dir/build.make benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.s
 .PHONY : latency_test.cpp.s
 
-stress_client.o: stress_client.cpp.o
-.PHONY : stress_client.o
+self_stress_test.o: self_stress_test.cpp.o
+.PHONY : self_stress_test.o
 
 # target to build an object file
-stress_client.cpp.o:
-	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/stress_client.cpp.o
-.PHONY : stress_client.cpp.o
+self_stress_test.cpp.o:
+	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.o
+.PHONY : self_stress_test.cpp.o
 
-stress_client.i: stress_client.cpp.i
-.PHONY : stress_client.i
+self_stress_test.i: self_stress_test.cpp.i
+.PHONY : self_stress_test.i
 
 # target to preprocess a source file
-stress_client.cpp.i:
-	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/stress_client.cpp.i
-.PHONY : stress_client.cpp.i
+self_stress_test.cpp.i:
+	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.i
+.PHONY : self_stress_test.cpp.i
 
-stress_client.s: stress_client.cpp.s
-.PHONY : stress_client.s
+self_stress_test.s: self_stress_test.cpp.s
+.PHONY : self_stress_test.s
 
 # target to generate assembly for a file
-stress_client.cpp.s:
-	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/stress_client.dir/build.make benchmark/CMakeFiles/stress_client.dir/stress_client.cpp.s
-.PHONY : stress_client.cpp.s
+self_stress_test.cpp.s:
+	cd /home/daivy/projects/muduo_learn/re_muduo/build && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/self_stress_test.dir/build.make benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.s
+.PHONY : self_stress_test.cpp.s
 
 throughput_test.o: throughput_test.cpp.o
 .PHONY : throughput_test.o
@@ -329,7 +329,7 @@ help:
 	@echo "... benchmark_base"
 	@echo "... echo_bench"
 	@echo "... latency_test"
-	@echo "... stress_client"
+	@echo "... self_stress_test"
 	@echo "... benchmark_base.o"
 	@echo "... benchmark_base.i"
 	@echo "... benchmark_base.s"
@@ -339,9 +339,9 @@ help:
 	@echo "... latency_test.o"
 	@echo "... latency_test.i"
 	@echo "... latency_test.s"
-	@echo "... stress_client.o"
-	@echo "... stress_client.i"
-	@echo "... stress_client.s"
+	@echo "... self_stress_test.o"
+	@echo "... self_stress_test.i"
+	@echo "... self_stress_test.s"
 	@echo "... throughput_test.o"
 	@echo "... throughput_test.i"
 	@echo "... throughput_test.s"

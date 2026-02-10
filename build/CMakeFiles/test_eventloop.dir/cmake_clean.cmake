@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../bin/test_eventloop"
-  "../bin/test_eventloop.pdb"
   "CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o"
   "CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o.d"
+  "bin/test_eventloop"
+  "bin/test_eventloop.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
