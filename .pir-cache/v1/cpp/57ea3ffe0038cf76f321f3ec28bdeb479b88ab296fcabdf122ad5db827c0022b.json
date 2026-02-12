@@ -1,0 +1,58 @@
+{
+  "deps": [
+    "include:[TcpServer.h]",
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[Buffer.h]",
+    "include:[Timestamp.h]",
+    "include:[InetAddress.h]",
+    "include:[Timer.h]",
+    "include:[Logger.h]",
+    "include:[chrono]",
+    "include:[iostream]",
+    "include:[cstring]",
+    "include:[sys/socket.h]",
+    "include:[netinet/in.h]",
+    "include:[arpa/inet.h]",
+    "include:[unistd.h]",
+    "include:[thread]",
+    "include:[atomic]",
+    "include:[vector]",
+    "include:[memory]",
+    "include:[fstream]",
+    "include:[iomanip]"
+  ],
+  "file": "../benchmark/self_stress_test.cpp",
+  "hash": "57ea3ffe0038cf76f321f3ec28bdeb479b88ab296fcabdf122ad5db827c0022b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "run"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "runServer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "runClients"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.716967",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[benchmark_base.h]",
+    "include:[algorithm]",
+    "include:[iostream]",
+    "include:[iomanip]"
+  ],
+  "file": "../benchmark/benchmark_base.cpp",
+  "hash": "13be565df087a8f38d18e42f99e3f647995d3043b01e9a2458285bc6948d7dcb",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.715273",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

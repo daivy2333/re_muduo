@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libbenchmark_base.a CMakeFiles/benchmark_base.dir/benchmark_base.cpp.o
-/usr/bin/ranlib ../lib/libbenchmark_base.a

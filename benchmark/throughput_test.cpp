@@ -1,5 +1,6 @@
 #include "benchmark_base.h"
 #include "echo_server_bench.h"
+#include "AsyncLoggingInit.h"
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -58,5 +59,15 @@ int main() {
     std::cout << "Starting throughput benchmark...\n";
     run_throughput_benchmark();
     std::cout << "Throughput benchmark completed." << std::endl;
+
+    // 检查是否有错误日志
+    if (!hasErrorLog()) {
+        std::cout << "No error logs found, cleaning up log files..." << std::endl;
+        cleanupLogFiles();
+        std::cout << "Log files cleaned up successfully." << std::endl;
+    } else {
+        std::cout << "Error logs found, keeping log files for inspection." << std::endl;
+    }
+
     return 0;
 }

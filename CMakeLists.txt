@@ -5,13 +5,18 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 # 添加头文件搜索路径
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
 
-aux_source_directory(. SRC_LIST)
+# 添加源文件路径
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/base SRC_LIST)
+
+# 排除旧的Logger.cpp，使用新的Logger_new.cpp
+list(REMOVE_ITEM SRC_LIST ${PROJECT_SOURCE_DIR}/src/base/Logger.cpp)
 
 add_library(re_muduo SHARED ${SRC_LIST})
+
 
 # 测试配置
 enable_testing()
@@ -81,6 +86,34 @@ add_executable(test_timer tests/test_timer.cpp)
 target_link_libraries(test_timer re_muduo pthread)
 add_test(NAME test_timer COMMAND test_timer)
 
+add_executable(test_timer_queue tests/test_timer_queue.cpp)
+target_link_libraries(test_timer_queue re_muduo pthread)
+add_test(NAME test_timer_queue COMMAND test_timer_queue)
+
+add_executable(test_timer_class tests/test_timer_class.cpp)
+target_link_libraries(test_timer_class re_muduo pthread)
+add_test(NAME test_timer_class COMMAND test_timer_class)
+
+add_executable(test_timer_integration tests/test_timer_integration.cpp)
+target_link_libraries(test_timer_integration re_muduo pthread)
+add_test(NAME test_timer_integration COMMAND test_timer_integration)
+
+add_executable(test_async_logging tests/test_async_logging.cpp)
+target_link_libraries(test_async_logging re_muduo pthread)
+add_test(NAME test_async_logging COMMAND test_async_logging)
+
 # 添加benchmark子目录
 add_subdirectory(benchmark)
 
+# 添加benchmark测试到CTest
+add_test(NAME echo_bench COMMAND echo_bench)
+add_test(NAME latency_test COMMAND latency_test)
+add_test(NAME self_stress_test COMMAND self_stress_test)
+
+# 创建自定义目标：一键运行所有benchmark测试
+add_custom_target(run_benchmarks
+    COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure -L benchmark
+    DEPENDS echo_bench latency_test self_stress_test
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+    COMMENT "Running all benchmark tests..."
+)

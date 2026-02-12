@@ -1,0 +1,38 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Logger.h]",
+    "include:[Timer.h]",
+    "include:[thread]",
+    "include:[atomic]",
+    "include:[iostream]"
+  ],
+  "file": "../tests/test_timer.cpp",
+  "hash": "2a9fed602adea40d0567aa372f082eeccae31a5c1a44aed1d0f7ccc793f5b802",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_basic_timer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_cancel"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.708607",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -49,157 +49,205 @@ cmake_ninja_workdir = /home/daivy/projects/muduo_learn/re_muduo/build/
 
 build cmake_object_order_depends_target_re_muduo: phony || CMakeFiles/re_muduo.dir
 
-build CMakeFiles/re_muduo.dir/Acceptor.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Acceptor.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Acceptor.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Acceptor.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Buffer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Buffer.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLogging.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Buffer.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Channel.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Channel.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLoggingInit.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Channel.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/CurrentThread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/CurrentThread.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Buffer.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/CurrentThread.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/DefaultPoller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/DefaultPoller.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Channel.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/DefaultPoller.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/EpollPoller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/EpollPoller.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/CurrentThread.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/EpollPoller.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/EventLoopThread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/EventLoopThread.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/DefaultPoller.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/EventLoopThread.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/EventLoopThreadPool.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/EventLoopThreadPool.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/EpollPoller.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/EventLoopThreadPool.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Eventloop.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Eventloop.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThread.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Eventloop.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/InetAddress.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/InetAddress.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThreadPool.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/InetAddress.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Logger.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Logger.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Eventloop.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Logger.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Poller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Poller.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/FileUtil.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Poller.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Socket.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Socket.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/InetAddress.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Socket.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/TcpConnection.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/TcpConnection.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/LogFile.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/TcpConnection.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/TcpServer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/TcpServer.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/LogStream.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/TcpServer.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Thread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Thread.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Logger_new.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Thread.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Timer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Timer.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Poller.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Timer.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/TimerQueue.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/TimerQueue.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/ProcessInfo.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/TimerQueue.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
-build CMakeFiles/re_muduo.dir/Timestamp.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/Timestamp.cpp || cmake_object_order_depends_target_re_muduo
+build CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Socket.cpp || cmake_object_order_depends_target_re_muduo
   DEFINES = -Dre_muduo_EXPORTS
-  DEP_FILE = CMakeFiles/re_muduo.dir/Timestamp.cpp.o.d
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o.d
   FLAGS = -g -std=c++17 -g -fPIC
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/re_muduo.dir
-  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/TcpConnection.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/TcpServer.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Thread.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Timer.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/TimerQueue.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
+
+build CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/src/base/Timestamp.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
 
 # =============================================================================
@@ -209,7 +257,7 @@ build CMakeFiles/re_muduo.dir/Timestamp.cpp.o: CXX_COMPILER__re_muduo_Debug /hom
 #############################################
 # Link the shared library ../lib/libre_muduo.so
 
-build ../lib/libre_muduo.so: CXX_SHARED_LIBRARY_LINKER__re_muduo_Debug CMakeFiles/re_muduo.dir/Acceptor.cpp.o CMakeFiles/re_muduo.dir/Buffer.cpp.o CMakeFiles/re_muduo.dir/Channel.cpp.o CMakeFiles/re_muduo.dir/CurrentThread.cpp.o CMakeFiles/re_muduo.dir/DefaultPoller.cpp.o CMakeFiles/re_muduo.dir/EpollPoller.cpp.o CMakeFiles/re_muduo.dir/EventLoopThread.cpp.o CMakeFiles/re_muduo.dir/EventLoopThreadPool.cpp.o CMakeFiles/re_muduo.dir/Eventloop.cpp.o CMakeFiles/re_muduo.dir/InetAddress.cpp.o CMakeFiles/re_muduo.dir/Logger.cpp.o CMakeFiles/re_muduo.dir/Poller.cpp.o CMakeFiles/re_muduo.dir/Socket.cpp.o CMakeFiles/re_muduo.dir/TcpConnection.cpp.o CMakeFiles/re_muduo.dir/TcpServer.cpp.o CMakeFiles/re_muduo.dir/Thread.cpp.o CMakeFiles/re_muduo.dir/Timer.cpp.o CMakeFiles/re_muduo.dir/TimerQueue.cpp.o CMakeFiles/re_muduo.dir/Timestamp.cpp.o
+build ../lib/libre_muduo.so: CXX_SHARED_LIBRARY_LINKER__re_muduo_Debug CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -std=c++17 -g
   OBJECT_DIR = CMakeFiles/re_muduo.dir
   POST_BUILD = :
@@ -231,7 +279,7 @@ build cmake_object_order_depends_target_test_timestamp: phony || cmake_object_or
 build CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o: CXX_COMPILER__test_timestamp_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp || cmake_object_order_depends_target_test_timestamp
   DEP_FILE = CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_timestamp.dir
   OBJECT_FILE_DIR = CMakeFiles/test_timestamp.dir/tests
 
@@ -264,7 +312,7 @@ build cmake_object_order_depends_target_test_inetaddress: phony || cmake_object_
 build CMakeFiles/test_inetaddress.dir/tests/test_inetaddress.cpp.o: CXX_COMPILER__test_inetaddress_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_inetaddress.cpp || cmake_object_order_depends_target_test_inetaddress
   DEP_FILE = CMakeFiles/test_inetaddress.dir/tests/test_inetaddress.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_inetaddress.dir
   OBJECT_FILE_DIR = CMakeFiles/test_inetaddress.dir/tests
 
@@ -297,7 +345,7 @@ build cmake_object_order_depends_target_test_logger: phony || cmake_object_order
 build CMakeFiles/test_logger.dir/tests/test_logger.cpp.o: CXX_COMPILER__test_logger_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_logger.cpp || cmake_object_order_depends_target_test_logger
   DEP_FILE = CMakeFiles/test_logger.dir/tests/test_logger.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_logger.dir
   OBJECT_FILE_DIR = CMakeFiles/test_logger.dir/tests
 
@@ -330,7 +378,7 @@ build cmake_object_order_depends_target_test_currentthread: phony || cmake_objec
 build CMakeFiles/test_currentthread.dir/tests/test_currentthread.cpp.o: CXX_COMPILER__test_currentthread_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_currentthread.cpp || cmake_object_order_depends_target_test_currentthread
   DEP_FILE = CMakeFiles/test_currentthread.dir/tests/test_currentthread.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_currentthread.dir
   OBJECT_FILE_DIR = CMakeFiles/test_currentthread.dir/tests
 
@@ -363,7 +411,7 @@ build cmake_object_order_depends_target_test_eventloop: phony || cmake_object_or
 build CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o: CXX_COMPILER__test_eventloop_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloop.cpp || cmake_object_order_depends_target_test_eventloop
   DEP_FILE = CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_eventloop.dir
   OBJECT_FILE_DIR = CMakeFiles/test_eventloop.dir/tests
 
@@ -396,7 +444,7 @@ build cmake_object_order_depends_target_test_channel: phony || cmake_object_orde
 build CMakeFiles/test_channel.dir/tests/test_channel.cpp.o: CXX_COMPILER__test_channel_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_channel.cpp || cmake_object_order_depends_target_test_channel
   DEP_FILE = CMakeFiles/test_channel.dir/tests/test_channel.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_channel.dir
   OBJECT_FILE_DIR = CMakeFiles/test_channel.dir/tests
 
@@ -429,7 +477,7 @@ build cmake_object_order_depends_target_test_poller: phony || cmake_object_order
 build CMakeFiles/test_poller.dir/tests/test_poller.cpp.o: CXX_COMPILER__test_poller_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_poller.cpp || cmake_object_order_depends_target_test_poller
   DEP_FILE = CMakeFiles/test_poller.dir/tests/test_poller.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_poller.dir
   OBJECT_FILE_DIR = CMakeFiles/test_poller.dir/tests
 
@@ -462,7 +510,7 @@ build cmake_object_order_depends_target_test_thread: phony || cmake_object_order
 build CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: CXX_COMPILER__test_thread_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_thread.cpp || cmake_object_order_depends_target_test_thread
   DEP_FILE = CMakeFiles/test_thread.dir/tests/test_thread.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_thread.dir
   OBJECT_FILE_DIR = CMakeFiles/test_thread.dir/tests
 
@@ -495,7 +543,7 @@ build cmake_object_order_depends_target_test_eventloopthread: phony || cmake_obj
 build CMakeFiles/test_eventloopthread.dir/tests/test_eventloopthread.cpp.o: CXX_COMPILER__test_eventloopthread_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthread.cpp || cmake_object_order_depends_target_test_eventloopthread
   DEP_FILE = CMakeFiles/test_eventloopthread.dir/tests/test_eventloopthread.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_eventloopthread.dir
   OBJECT_FILE_DIR = CMakeFiles/test_eventloopthread.dir/tests
 
@@ -528,7 +576,7 @@ build cmake_object_order_depends_target_test_eventloopthreadpool: phony || cmake
 build CMakeFiles/test_eventloopthreadpool.dir/tests/test_eventloopthreadpool.cpp.o: CXX_COMPILER__test_eventloopthreadpool_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthreadpool.cpp || cmake_object_order_depends_target_test_eventloopthreadpool
   DEP_FILE = CMakeFiles/test_eventloopthreadpool.dir/tests/test_eventloopthreadpool.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_eventloopthreadpool.dir
   OBJECT_FILE_DIR = CMakeFiles/test_eventloopthreadpool.dir/tests
 
@@ -561,7 +609,7 @@ build cmake_object_order_depends_target_test_socket: phony || cmake_object_order
 build CMakeFiles/test_socket.dir/tests/test_socket.cpp.o: CXX_COMPILER__test_socket_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_socket.cpp || cmake_object_order_depends_target_test_socket
   DEP_FILE = CMakeFiles/test_socket.dir/tests/test_socket.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_socket.dir
   OBJECT_FILE_DIR = CMakeFiles/test_socket.dir/tests
 
@@ -594,7 +642,7 @@ build cmake_object_order_depends_target_test_acceptor: phony || cmake_object_ord
 build CMakeFiles/test_acceptor.dir/tests/test_acceptor.cpp.o: CXX_COMPILER__test_acceptor_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_acceptor.cpp || cmake_object_order_depends_target_test_acceptor
   DEP_FILE = CMakeFiles/test_acceptor.dir/tests/test_acceptor.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_acceptor.dir
   OBJECT_FILE_DIR = CMakeFiles/test_acceptor.dir/tests
 
@@ -627,7 +675,7 @@ build cmake_object_order_depends_target_test_tcpserver: phony || cmake_object_or
 build CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o: CXX_COMPILER__test_tcpserver_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpserver.cpp || cmake_object_order_depends_target_test_tcpserver
   DEP_FILE = CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_tcpserver.dir
   OBJECT_FILE_DIR = CMakeFiles/test_tcpserver.dir/tests
 
@@ -660,7 +708,7 @@ build cmake_object_order_depends_target_test_buffer: phony || cmake_object_order
 build CMakeFiles/test_buffer.dir/tests/test_buffer.cpp.o: CXX_COMPILER__test_buffer_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_buffer.cpp || cmake_object_order_depends_target_test_buffer
   DEP_FILE = CMakeFiles/test_buffer.dir/tests/test_buffer.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_buffer.dir
   OBJECT_FILE_DIR = CMakeFiles/test_buffer.dir/tests
 
@@ -693,7 +741,7 @@ build cmake_object_order_depends_target_test_tcpconnection: phony || cmake_objec
 build CMakeFiles/test_tcpconnection.dir/tests/test_tcpconnection.cpp.o: CXX_COMPILER__test_tcpconnection_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpconnection.cpp || cmake_object_order_depends_target_test_tcpconnection
   DEP_FILE = CMakeFiles/test_tcpconnection.dir/tests/test_tcpconnection.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_tcpconnection.dir
   OBJECT_FILE_DIR = CMakeFiles/test_tcpconnection.dir/tests
 
@@ -726,7 +774,7 @@ build cmake_object_order_depends_target_test_timer: phony || cmake_object_order_
 build CMakeFiles/test_timer.dir/tests/test_timer.cpp.o: CXX_COMPILER__test_timer_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer.cpp || cmake_object_order_depends_target_test_timer
   DEP_FILE = CMakeFiles/test_timer.dir/tests/test_timer.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
   OBJECT_DIR = CMakeFiles/test_timer.dir
   OBJECT_FILE_DIR = CMakeFiles/test_timer.dir/tests
 
@@ -746,6 +794,144 @@ build ../bin/test_timer: CXX_EXECUTABLE_LINKER__test_timer_Debug CMakeFiles/test
   PRE_LINK = :
   TARGET_FILE = ../bin/test_timer
   TARGET_PDB = test_timer.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_timer_queue
+
+
+#############################################
+# Order-only phony target for test_timer_queue
+
+build cmake_object_order_depends_target_test_timer_queue: phony || cmake_object_order_depends_target_re_muduo
+
+build CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cpp.o: CXX_COMPILER__test_timer_queue_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_queue.cpp || cmake_object_order_depends_target_test_timer_queue
+  DEP_FILE = CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cpp.o.d
+  FLAGS = -g -std=c++17 -g
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/test_timer_queue.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_timer_queue.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_timer_queue
+
+
+#############################################
+# Link the executable ../bin/test_timer_queue
+
+build ../bin/test_timer_queue: CXX_EXECUTABLE_LINKER__test_timer_queue_Debug CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cpp.o | ../lib/libre_muduo.so || ../lib/libre_muduo.so
+  FLAGS = -g -std=c++17 -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib  ../lib/libre_muduo.so  -lpthread
+  OBJECT_DIR = CMakeFiles/test_timer_queue.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/test_timer_queue
+  TARGET_PDB = test_timer_queue.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_timer_class
+
+
+#############################################
+# Order-only phony target for test_timer_class
+
+build cmake_object_order_depends_target_test_timer_class: phony || cmake_object_order_depends_target_re_muduo
+
+build CMakeFiles/test_timer_class.dir/tests/test_timer_class.cpp.o: CXX_COMPILER__test_timer_class_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_class.cpp || cmake_object_order_depends_target_test_timer_class
+  DEP_FILE = CMakeFiles/test_timer_class.dir/tests/test_timer_class.cpp.o.d
+  FLAGS = -g -std=c++17 -g
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/test_timer_class.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_timer_class.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_timer_class
+
+
+#############################################
+# Link the executable ../bin/test_timer_class
+
+build ../bin/test_timer_class: CXX_EXECUTABLE_LINKER__test_timer_class_Debug CMakeFiles/test_timer_class.dir/tests/test_timer_class.cpp.o | ../lib/libre_muduo.so || ../lib/libre_muduo.so
+  FLAGS = -g -std=c++17 -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib  ../lib/libre_muduo.so  -lpthread
+  OBJECT_DIR = CMakeFiles/test_timer_class.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/test_timer_class
+  TARGET_PDB = test_timer_class.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_timer_integration
+
+
+#############################################
+# Order-only phony target for test_timer_integration
+
+build cmake_object_order_depends_target_test_timer_integration: phony || cmake_object_order_depends_target_re_muduo
+
+build CMakeFiles/test_timer_integration.dir/tests/test_timer_integration.cpp.o: CXX_COMPILER__test_timer_integration_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_integration.cpp || cmake_object_order_depends_target_test_timer_integration
+  DEP_FILE = CMakeFiles/test_timer_integration.dir/tests/test_timer_integration.cpp.o.d
+  FLAGS = -g -std=c++17 -g
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/test_timer_integration.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_timer_integration.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_timer_integration
+
+
+#############################################
+# Link the executable ../bin/test_timer_integration
+
+build ../bin/test_timer_integration: CXX_EXECUTABLE_LINKER__test_timer_integration_Debug CMakeFiles/test_timer_integration.dir/tests/test_timer_integration.cpp.o | ../lib/libre_muduo.so || ../lib/libre_muduo.so
+  FLAGS = -g -std=c++17 -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib  ../lib/libre_muduo.so  -lpthread
+  OBJECT_DIR = CMakeFiles/test_timer_integration.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/test_timer_integration
+  TARGET_PDB = test_timer_integration.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_async_logging
+
+
+#############################################
+# Order-only phony target for test_async_logging
+
+build cmake_object_order_depends_target_test_async_logging: phony || cmake_object_order_depends_target_re_muduo
+
+build CMakeFiles/test_async_logging.dir/tests/test_async_logging.cpp.o: CXX_COMPILER__test_async_logging_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_async_logging.cpp || cmake_object_order_depends_target_test_async_logging
+  DEP_FILE = CMakeFiles/test_async_logging.dir/tests/test_async_logging.cpp.o.d
+  FLAGS = -g -std=c++17 -g
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/test_async_logging.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_async_logging.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_async_logging
+
+
+#############################################
+# Link the executable ../bin/test_async_logging
+
+build ../bin/test_async_logging: CXX_EXECUTABLE_LINKER__test_async_logging_Debug CMakeFiles/test_async_logging.dir/tests/test_async_logging.cpp.o | ../lib/libre_muduo.so || ../lib/libre_muduo.so
+  FLAGS = -g -std=c++17 -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib  ../lib/libre_muduo.so  -lpthread
+  OBJECT_DIR = CMakeFiles/test_async_logging.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/test_async_logging
+  TARGET_PDB = test_async_logging.dbg
+
+
+#############################################
+# Utility command for run_benchmarks
+
+build run_benchmarks: phony CMakeFiles/run_benchmarks ../bin/benchmark/echo_bench ../bin/benchmark/latency_test ../bin/benchmark/self_stress_test
 
 
 #############################################
@@ -782,6 +968,14 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Custom command for CMakeFiles/run_benchmarks
+
+build CMakeFiles/run_benchmarks | ${cmake_ninja_workdir}CMakeFiles/run_benchmarks: CUSTOM_COMMAND ../bin/benchmark/echo_bench ../bin/benchmark/latency_test ../bin/benchmark/self_stress_test || ../bin/benchmark/echo_bench ../bin/benchmark/latency_test ../bin/benchmark/self_stress_test ../lib/libbenchmark_base.a ../lib/libre_muduo.so
+  COMMAND = cd /home/daivy/projects/muduo_learn/re_muduo/build && /usr/bin/ctest --output-on-failure -L benchmark
+  DESC = Running all benchmark tests...
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/daivy/projects/muduo_learn/re_muduo/CMakeLists.txt
@@ -799,7 +993,7 @@ build cmake_object_order_depends_target_benchmark_base: phony || benchmark/CMake
 build benchmark/CMakeFiles/benchmark_base.dir/benchmark_base.cpp.o: CXX_COMPILER__benchmark_base_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp || cmake_object_order_depends_target_benchmark_base
   DEP_FILE = benchmark/CMakeFiles/benchmark_base.dir/benchmark_base.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo
   OBJECT_DIR = benchmark/CMakeFiles/benchmark_base.dir
   OBJECT_FILE_DIR = benchmark/CMakeFiles/benchmark_base.dir
 
@@ -831,14 +1025,14 @@ build cmake_object_order_depends_target_echo_bench: phony || cmake_object_order_
 build benchmark/CMakeFiles/echo_bench.dir/echo_server_bench.cpp.o: CXX_COMPILER__echo_bench_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/echo_server_bench.cpp || cmake_object_order_depends_target_echo_bench
   DEP_FILE = benchmark/CMakeFiles/echo_bench.dir/echo_server_bench.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo
   OBJECT_DIR = benchmark/CMakeFiles/echo_bench.dir
   OBJECT_FILE_DIR = benchmark/CMakeFiles/echo_bench.dir
 
 build benchmark/CMakeFiles/echo_bench.dir/throughput_test.cpp.o: CXX_COMPILER__echo_bench_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/throughput_test.cpp || cmake_object_order_depends_target_echo_bench
   DEP_FILE = benchmark/CMakeFiles/echo_bench.dir/throughput_test.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo
   OBJECT_DIR = benchmark/CMakeFiles/echo_bench.dir
   OBJECT_FILE_DIR = benchmark/CMakeFiles/echo_bench.dir
 
@@ -871,7 +1065,7 @@ build cmake_object_order_depends_target_latency_test: phony || cmake_object_orde
 build benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.o: CXX_COMPILER__latency_test_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/latency_test.cpp || cmake_object_order_depends_target_latency_test
   DEP_FILE = benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo
   OBJECT_DIR = benchmark/CMakeFiles/latency_test.dir
   OBJECT_FILE_DIR = benchmark/CMakeFiles/latency_test.dir
 
@@ -904,7 +1098,7 @@ build cmake_object_order_depends_target_self_stress_test: phony || cmake_object_
 build benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.o: CXX_COMPILER__self_stress_test_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/self_stress_test.cpp || cmake_object_order_depends_target_self_stress_test
   DEP_FILE = benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.o.d
   FLAGS = -g -std=c++17 -g
-  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo
   OBJECT_DIR = benchmark/CMakeFiles/self_stress_test.dir
   OBJECT_FILE_DIR = benchmark/CMakeFiles/self_stress_test.dir
 
@@ -994,6 +1188,8 @@ build self_stress_test: phony ../bin/benchmark/self_stress_test
 
 build test_acceptor: phony ../bin/test_acceptor
 
+build test_async_logging: phony ../bin/test_async_logging
+
 build test_buffer: phony ../bin/test_buffer
 
 build test_channel: phony ../bin/test_channel
@@ -1022,6 +1218,12 @@ build test_thread: phony ../bin/test_thread
 
 build test_timer: phony ../bin/test_timer
 
+build test_timer_class: phony ../bin/test_timer_class
+
+build test_timer_integration: phony ../bin/test_timer_integration
+
+build test_timer_queue: phony ../bin/test_timer_queue
+
 build test_timestamp: phony ../bin/test_timestamp
 
 # =============================================================================
@@ -1032,7 +1234,7 @@ build test_timestamp: phony ../bin/test_timestamp
 #############################################
 # Folder: /home/daivy/projects/muduo_learn/re_muduo/build
 
-build all: phony ../lib/libre_muduo.so ../bin/test_timestamp ../bin/test_inetaddress ../bin/test_logger ../bin/test_currentthread ../bin/test_eventloop ../bin/test_channel ../bin/test_poller ../bin/test_thread ../bin/test_eventloopthread ../bin/test_eventloopthreadpool ../bin/test_socket ../bin/test_acceptor ../bin/test_tcpserver ../bin/test_buffer ../bin/test_tcpconnection ../bin/test_timer benchmark/all
+build all: phony ../lib/libre_muduo.so ../bin/test_timestamp ../bin/test_inetaddress ../bin/test_logger ../bin/test_currentthread ../bin/test_eventloop ../bin/test_channel ../bin/test_poller ../bin/test_thread ../bin/test_eventloopthread ../bin/test_eventloopthreadpool ../bin/test_socket ../bin/test_acceptor ../bin/test_tcpserver ../bin/test_buffer ../bin/test_tcpconnection ../bin/test_timer ../bin/test_timer_queue ../bin/test_timer_class ../bin/test_timer_integration ../bin/test_async_logging benchmark/all
 
 # =============================================================================
 

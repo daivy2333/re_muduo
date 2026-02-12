@@ -1,0 +1,21 @@
+{
+  "deps": [
+    "include:[EpollPoller.h]",
+    "include:[Eventloop.h]",
+    "include:[Channel.h]",
+    "include:[Logger.h]",
+    "include:[errno.h]",
+    "include:[string.h]",
+    "include:[unistd.h]"
+  ],
+  "file": "../EpollPoller.cpp",
+  "hash": "2f5bdcd5a5a08ca0b36e0fb26ef39a74537768c1c8f5078196f8456190888088",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.699645",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

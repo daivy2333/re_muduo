@@ -1,4 +1,3 @@
-#define MUDEBUF
 #include "TcpServer.h"
 #include "TcpConnection.h"
 #include "Eventloop.h"
@@ -7,6 +6,7 @@
 #include "InetAddress.h"
 #include "Timer.h"
 #include "Logger.h"
+#include "AsyncLoggingInit.h"
 #include <chrono>
 #include <iostream>
 #include <cstring>
@@ -29,14 +29,21 @@ public:
           total_connections_(0), active_connections_(0) {}
 
     void run() {
-        // 设置日志级别为ERROR，减少日志输出
-        Logger::instance().setLogLevel(ERROR);
+        // 初始化异步日志
+        initAsyncLogging("log/self_stress_test", 1024 * 1024 * 100, 3);  // 100MB滚动, 3秒刷新
+        setAsyncOutput();
+        
+        // 设置日志级别为INFO，记录更多详细信息
+        Logger::instance().setLogLevel(INFO);
+        
+        LOG_INFO("=== Self Stress Test Started ===");
+        LOG_INFO("Port: %d, Clients: %d, Duration: %ds", port_, clients_, duration_);
 
         // 创建输出文件
         std::string report_path = "/home/daivy/projects/muduo_learn/re_muduo/self_stress_report.txt";
         report_.open(report_path);
         if (!report_.is_open()) {
-            std::cerr << "Failed to create report file: " << report_path << std::endl;
+            LOG_ERROR("Failed to create report file: %s", report_path.c_str());
             return;
         }
         report_ << "=== Self Stress Test Report ===" << std::endl;
@@ -62,15 +69,17 @@ public:
         runClients();
 
         // 等待服务器线程结束
-        std::cout << "Waiting for server thread to finish..." << std::endl;
+        LOG_INFO("Waiting for server thread to finish...");
         if (server_thread.joinable()) {
             server_thread.join();
         }
-        std::cout << "Server thread finished" << std::endl;
+        LOG_INFO("Server thread finished");
     }
 
 private:
     void runServer() {
+        LOG_INFO("Server initialization started");
+        
         server_loop_ = new EventLoop;
         InetAddress listenAddr(port_);
         server_ = new TcpServer(server_loop_, listenAddr);
@@ -79,8 +88,16 @@ private:
             if (conn->connected()) {
                 total_connections_.fetch_add(1);
                 active_connections_.fetch_add(1);
+                LOG_DEBUG("New connection established: %s, Total: %ld, Active: %ld", 
+                          conn->name().c_str(), 
+                          total_connections_.load(), 
+                          active_connections_.load());
             } else {
                 active_connections_.fetch_sub(1);
+                LOG_DEBUG("Connection closed: %s, Total: %ld, Active: %ld", 
+                          conn->name().c_str(), 
+                          total_connections_.load(), 
+                          active_connections_.load());
             }
         });
 
@@ -93,30 +110,32 @@ private:
         // 【参数调优】服务器线程数：4(默认) -> 8(高负荷)
         // 增加线程数可以提高并发处理能力
         server_->setThreadNum(8);
+        LOG_INFO("Server thread count set to 8");
         server_->start();
-
-        std::cout << "Server started on port " << port_ << std::endl;
+        LOG_INFO("Server started on port %d", port_);
 
         server_loop_->runEvery(5.0, [this]() {
-            std::cout << "\n=== Server Status ===" << std::endl;
-            std::cout << "Total Connections: " << total_connections_.load() << std::endl;
-            std::cout << "Active Connections: " << active_connections_.load() << std::endl;
+            LOG_INFO("=== Server Status ===");
+            LOG_INFO("Total Connections: %ld", total_connections_.load());
+            LOG_INFO("Active Connections: %ld", active_connections_.load());
         });
 
-        std::cout << "Server loop started" << std::endl;
+        LOG_INFO("Server loop started");
         server_loop_->loop();
-        std::cout << "Server loop finished" << std::endl;
+        LOG_INFO("Server loop finished");
 
-        std::cout << "Deleting server..." << std::endl;
+        LOG_INFO("Deleting server...");
         delete server_;
         server_ = nullptr;
-        std::cout << "Deleting loop..." << std::endl;
+        LOG_INFO("Deleting loop...");
         delete server_loop_;
         server_loop_ = nullptr;
-        std::cout << "Server cleanup done" << std::endl;
+        LOG_INFO("Server cleanup done");
     }
 
     void runClients() {
+        LOG_INFO("Starting client connections");
+        
         std::vector<std::thread> client_threads;
         std::atomic<int64_t> total_requests{0};
         std::atomic<int64_t> total_bytes{0};
@@ -131,7 +150,7 @@ private:
             client_threads.emplace_back([this, &total_requests, &total_bytes, &failed_requests, &running, &all_connected] {
                 int sockfd = socket(AF_INET, SOCK_STREAM, 0);
                 if (sockfd < 0) {
-                    std::cerr << "Failed to create socket, errno: " << errno << std::endl;
+                    LOG_ERROR("Failed to create socket, errno: %d", errno);
                     return;
                 }
 
@@ -145,7 +164,7 @@ private:
                 inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr);
 
                 if (connect(sockfd, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0) {
-                    std::cerr << "Failed to connect to server, errno: " << errno << std::endl;
+                    LOG_ERROR("Failed to connect to server, errno: %d", errno);
                     close(sockfd);
                     return;
                 }
@@ -201,7 +220,7 @@ private:
         // 等待所有客户端连接
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         all_connected.store(true);
-        std::cout << "All clients connected, starting test..." << std::endl;
+        LOG_INFO("All clients connected, starting test...");
 
         // 运行指定时间
         std::this_thread::sleep_for(std::chrono::seconds(duration_));
@@ -218,13 +237,13 @@ private:
         double duration = std::chrono::duration<double>(end_time - start_time).count();
 
         // 打印结果
-        std::cout << "\n=== Test Results ===" << std::endl;
-        std::cout << "Total Requests: " << total_requests.load() << std::endl;
-        std::cout << "Failed Requests: " << failed_requests.load() << std::endl;
-        std::cout << "Total Bytes: " << total_bytes.load() << " bytes" << std::endl;
-        std::cout << "Duration: " << duration << "s" << std::endl;
-        std::cout << "QPS: " << total_requests.load() / duration << std::endl;
-        std::cout << "Throughput: " << (total_bytes.load() / duration / 1024 / 1024) << " MB/s" << std::endl;
+        LOG_INFO("=== Test Results ===");
+        LOG_INFO("Total Requests: %ld", total_requests.load());
+        LOG_INFO("Failed Requests: %ld", failed_requests.load());
+        LOG_INFO("Total Bytes: %ld bytes", total_bytes.load());
+        LOG_INFO("Duration: %.2fs", duration);
+        LOG_INFO("QPS: %.2f", total_requests.load() / duration);
+        LOG_INFO("Throughput: %.2f MB/s", (total_bytes.load() / duration / 1024 / 1024));
 
         // 输出结果到文件
         report_ << "\n=== Test Results ===" << std::endl;
@@ -280,8 +299,21 @@ int main(int argc, char* argv[]) {
         duration = std::atoi(argv[3]);
     }
 
+    LOG_INFO("SelfStressTest parameters: port=%d, clients=%d, duration=%d", port, clients, duration);
+
     SelfStressTest test(port, clients, duration);
     test.run();
+
+    LOG_INFO("SelfStressTest main completed");
+
+    // 检查是否有错误日志
+    if (!hasErrorLog()) {
+        std::cout << "No error logs found, cleaning up log files..." << std::endl;
+        cleanupLogFiles();
+        std::cout << "Log files cleaned up successfully." << std::endl;
+    } else {
+        std::cout << "Error logs found, keeping log files for inspection." << std::endl;
+    }
 
     return 0;
 }

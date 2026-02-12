@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[Callbacks.h]",
+    "include:[Timestamp.h]",
+    "include:[atomic]"
+  ],
+  "file": "../Timer.h",
+  "hash": "90568985f4e9d07fd28607318ff5603bcafe29b81e9004b2effbdef71a7c59fb",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "numCreated"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.697235",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

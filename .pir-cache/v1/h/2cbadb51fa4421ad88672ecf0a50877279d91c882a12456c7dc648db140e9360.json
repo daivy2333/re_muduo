@@ -1,0 +1,19 @@
+{
+  "deps": [
+    "include:[Timestamp.h]",
+    "include:[vector]",
+    "include:[atomic]",
+    "include:[functional]",
+    "include:[mutex]"
+  ],
+  "file": "../benchmark/benchmark_base.h",
+  "hash": "2cbadb51fa4421ad88672ecf0a50877279d91c882a12456c7dc648db140e9360",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.717450",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

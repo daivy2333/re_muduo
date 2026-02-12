@@ -1,0 +1,16 @@
+{
+  "deps": [
+    "include:[memory]",
+    "include:[functional]"
+  ],
+  "file": "../Callbacks.h",
+  "hash": "7221ee9f8937bb28eb139cd52c373f6f41745d62c7c79deb78fd57e5fa275ca5",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.698020",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

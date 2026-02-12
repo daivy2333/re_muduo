@@ -1,0 +1,25 @@
+{
+  "deps": [
+    "include:[Timestamp.h]",
+    "include:[string]",
+    "include:[sys/time.h]"
+  ],
+  "file": "../Timestamp.cpp",
+  "hash": "53d6d2ceb7ec39c359ea265f8ad845097b0542c79e47d87a11bbe508ab173103",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.703535",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

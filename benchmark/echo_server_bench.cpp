@@ -1,8 +1,9 @@
-#define MUDEBUF
 #include "echo_server_bench.h"
 #include "TcpConnection.h"
 #include "Buffer.h"
 #include "Timestamp.h"
+#include "AsyncLoggingInit.h"
+#include "Logger.h"
 #include <chrono>
 #include <iostream>
 #include <cstring>
@@ -18,6 +19,12 @@ EchoServerBench::EchoServerBench(int port, int payload_size)
       loop_(nullptr), server_(nullptr), received_bytes_(0) {}
 
 void EchoServerBench::setup() {
+    // 初始化异步日志
+    initAsyncLogging("log/echo_bench", 1024 * 1024 * 100, 3);  // 100MB滚动, 3秒刷新
+    setAsyncOutput();
+    
+    LOG_INFO("EchoServerBench setup started, port=%d, payload_size=%d", port_, payload_size_);
+    
     // 先创建服务器线程，在该线程中创建EventLoop
     server_thread_.reset(new std::thread([this] {
         loop_ = new EventLoop;  // 在服务器线程中创建EventLoop
@@ -26,9 +33,9 @@ void EchoServerBench::setup() {
 
         server_->setConnectionCallback([this](const TcpConnectionPtr& conn) {
             if (conn->connected()) {
-                std::cout << "New connection: " << conn->name() << std::endl;
+                LOG_INFO("New connection: %s", conn->name().c_str());
             } else {
-                std::cout << "Connection closed: " << conn->name() << std::endl;
+                LOG_INFO("Connection closed: %s", conn->name().c_str());
             }
         });
 
@@ -42,7 +49,9 @@ void EchoServerBench::setup() {
         // 【参数调优】服务器线程数：4(默认) -> 8(高负荷)
         // 增加线程数可以提高并发处理能力
         server_->setThreadNum(8);
+        LOG_INFO("Server thread count set to 8");
         server_->start();
+        LOG_INFO("Server started on port %d", port_);
 
         loop_->loop();  // 在服务器线程中运行loop()
 
@@ -70,6 +79,7 @@ BenchmarkBase::Result EchoServerBench::run(int concurrent_clients, int duration_
             clients.emplace_back([this, &total_requests, &total_bytes, &running] {
                 int sockfd = socket(AF_INET, SOCK_STREAM, 0);
                 if (sockfd < 0) {
+                    LOG_ERROR("Failed to create socket: %s", strerror(errno));
                     return;
                 }
 
@@ -80,6 +90,7 @@ BenchmarkBase::Result EchoServerBench::run(int concurrent_clients, int duration_
                 inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr);
 
                 if (connect(sockfd, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0) {
+                    LOG_ERROR("Failed to connect to server: %s", strerror(errno));
                     close(sockfd);
                     return;
                 }
@@ -97,6 +108,7 @@ BenchmarkBase::Result EchoServerBench::run(int concurrent_clients, int duration_
                     // 发送数据
                     ssize_t sent = send(sockfd, payload, payload_size_, 0);
                     if (sent < 0) {
+                        LOG_ERROR("Send failed: %s", strerror(errno));
                         break;
                     }
 
@@ -107,6 +119,7 @@ BenchmarkBase::Result EchoServerBench::run(int concurrent_clients, int duration_
                         ssize_t received = recv(sockfd, recv_buf + total_received,
                                              payload_size_ - total_received, 0);
                         if (received < 0) {
+                            LOG_ERROR("Recv failed: %s", strerror(errno));
                             break;
                         }
                         total_received += received;
@@ -141,10 +154,18 @@ BenchmarkBase::Result EchoServerBench::run(int concurrent_clients, int duration_
     }
 
 void EchoServerBench::teardown() {
-        if (loop_) {
-            loop_->quit();
-        }
-        if (server_thread_ && server_thread_->joinable()) {
-            server_thread_->join();
-        }
+    LOG_INFO("EchoServerBench teardown started");
+    
+    if (loop_) {
+        loop_->quit();
+        LOG_INFO("EventLoop quit called");
     }
+    if (server_thread_ && server_thread_->joinable()) {
+        server_thread_->join();
+        LOG_INFO("Server thread joined");
+    }
+    
+    // 等待日志刷新
+    sleep(3);
+    LOG_INFO("EchoServerBench teardown completed");
+}

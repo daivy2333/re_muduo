@@ -1,202 +1,252 @@
 [
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Acceptor.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Acceptor.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Acceptor.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Acceptor.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Acceptor.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Buffer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Buffer.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Buffer.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLogging.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLogging.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Channel.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Channel.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Channel.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLoggingInit.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/AsyncLoggingInit.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/CurrentThread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/CurrentThread.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/CurrentThread.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Buffer.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Buffer.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/DefaultPoller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/DefaultPoller.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/DefaultPoller.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Channel.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Channel.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/EpollPoller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/EpollPoller.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/EpollPoller.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/CurrentThread.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/CurrentThread.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/EventLoopThread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/EventLoopThread.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/EventLoopThread.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/DefaultPoller.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/DefaultPoller.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/EventLoopThreadPool.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/EventLoopThreadPool.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/EventLoopThreadPool.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/EpollPoller.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/EpollPoller.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Eventloop.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Eventloop.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Eventloop.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThread.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThread.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/InetAddress.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/InetAddress.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/InetAddress.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThreadPool.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/EventLoopThreadPool.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Logger.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Logger.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Logger.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Eventloop.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Eventloop.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Poller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Poller.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Poller.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/FileUtil.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/FileUtil.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Socket.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Socket.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Socket.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/InetAddress.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/InetAddress.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/TcpConnection.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/TcpConnection.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/TcpConnection.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/LogFile.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/LogFile.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/TcpServer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/TcpServer.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/TcpServer.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/LogStream.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/LogStream.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Thread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Thread.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Thread.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Logger_new.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Logger_new.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Timer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Timer.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Timer.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Poller.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Poller.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/TimerQueue.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/TimerQueue.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/TimerQueue.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/ProcessInfo.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/ProcessInfo.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/Timestamp.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/Timestamp.cpp",
-  "file": "/home/daivy/projects/muduo_learn/re_muduo/Timestamp.cpp"
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Socket.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Socket.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/TcpConnection.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/TcpConnection.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/TcpServer.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/TcpServer.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Thread.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Thread.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Timer.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Timer.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/TimerQueue.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/TimerQueue.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/src/base/Timestamp.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/src/base/Timestamp.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_inetaddress.dir/tests/test_inetaddress.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_inetaddress.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_inetaddress.dir/tests/test_inetaddress.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_inetaddress.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_inetaddress.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_logger.dir/tests/test_logger.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_logger.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_logger.dir/tests/test_logger.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_logger.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_logger.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_currentthread.dir/tests/test_currentthread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_currentthread.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_currentthread.dir/tests/test_currentthread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_currentthread.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_currentthread.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloop.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_eventloop.dir/tests/test_eventloop.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloop.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloop.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_channel.dir/tests/test_channel.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_channel.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_channel.dir/tests/test_channel.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_channel.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_channel.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_poller.dir/tests/test_poller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_poller.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_poller.dir/tests/test_poller.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_poller.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_poller.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_thread.dir/tests/test_thread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_thread.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_thread.dir/tests/test_thread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_thread.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_thread.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_eventloopthread.dir/tests/test_eventloopthread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthread.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_eventloopthread.dir/tests/test_eventloopthread.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthread.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthread.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_eventloopthreadpool.dir/tests/test_eventloopthreadpool.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthreadpool.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_eventloopthreadpool.dir/tests/test_eventloopthreadpool.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthreadpool.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_eventloopthreadpool.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_socket.dir/tests/test_socket.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_socket.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_socket.dir/tests/test_socket.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_socket.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_socket.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_acceptor.dir/tests/test_acceptor.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_acceptor.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_acceptor.dir/tests/test_acceptor.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_acceptor.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_acceptor.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpserver.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpserver.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpserver.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_buffer.dir/tests/test_buffer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_buffer.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_buffer.dir/tests/test_buffer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_buffer.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_buffer.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_tcpconnection.dir/tests/test_tcpconnection.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpconnection.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_tcpconnection.dir/tests/test_tcpconnection.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpconnection.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_tcpconnection.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o CMakeFiles/test_timer.dir/tests/test_timer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timer.dir/tests/test_timer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timer.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/benchmark_base.dir/benchmark_base.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_queue.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_queue.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timer_class.dir/tests/test_timer_class.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_class.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_class.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timer_integration.dir/tests/test_timer_integration.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_integration.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_integration.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_async_logging.dir/tests/test_async_logging.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_async_logging.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_async_logging.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/benchmark_base.dir/benchmark_base.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/echo_bench.dir/echo_server_bench.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/echo_server_bench.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/echo_bench.dir/echo_server_bench.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/echo_server_bench.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/echo_server_bench.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/echo_bench.dir/throughput_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/throughput_test.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/echo_bench.dir/throughput_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/throughput_test.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/throughput_test.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/latency_test.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/latency_test.dir/latency_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/latency_test.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/latency_test.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
-  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/self_stress_test.cpp",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include -I/home/daivy/projects/muduo_learn/re_muduo  -g -std=c++17 -g -o benchmark/CMakeFiles/self_stress_test.dir/self_stress_test.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/self_stress_test.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/self_stress_test.cpp"
 }
 ]

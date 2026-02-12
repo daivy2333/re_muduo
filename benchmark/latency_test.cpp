@@ -3,6 +3,8 @@
 #include "Eventloop.h"
 #include "TcpConnection.h"
 #include "Buffer.h"
+#include "AsyncLoggingInit.h"
+#include "Logger.h"
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -25,15 +27,22 @@ public:
           loop_(nullptr), server_(nullptr) {}
 
     void setup() override {
+        // 初始化异步日志
+        initAsyncLogging("log/latency_test", 1024 * 1024 * 100, 3);  // 100MB滚动, 3秒刷新
+        setAsyncOutput();
+        
+        LOG_INFO("LatencyTest setup started, server_ip=%s, port=%d, payload_size=%d", 
+                 server_ip_.c_str(), port_, payload_size_);
+        
         // 启动服务器线程
         server_thread_.reset(new std::thread([this] {
             loop_ = new EventLoop;
             InetAddress listenAddr(port_);
             server_ = new TcpServer(loop_, listenAddr);
 
-            server_->setConnectionCallback([](const TcpConnectionPtr& conn) {
+            server_->setConnectionCallback([this](const TcpConnectionPtr& conn) {
                 if (conn->connected()) {
-                    // std::cout << "New connection: " << conn->name() << std::endl;
+                    LOG_DEBUG("New connection: %s", conn->name().c_str());
                 }
             });
 
@@ -47,7 +56,9 @@ public:
             // 【参数调优】服务器线程数：4(默认) -> 8(高负荷)
             // 增加线程数可以提高并发处理能力
             server_->setThreadNum(8);
+            LOG_INFO("Server thread count set to 8");
             server_->start();
+            LOG_INFO("Server started on port %d", port_);
 
             loop_->loop();
 
@@ -74,6 +85,7 @@ public:
             clients.emplace_back([this, &total_requests, &total_bytes, &running] {
                 int sockfd = socket(AF_INET, SOCK_STREAM, 0);
                 if (sockfd < 0) {
+                    LOG_ERROR("Failed to create socket: %s", strerror(errno));
                     return;
                 }
 
@@ -84,11 +96,11 @@ public:
                 inet_pton(AF_INET, server_ip_.c_str(), &serv_addr.sin_addr);
 
                 if (connect(sockfd, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0) {
-                    std::cerr << "Connection failed: " << strerror(errno) << std::endl;
+                    LOG_ERROR("Connection failed: %s", strerror(errno));
                     close(sockfd);
                     return;
                 }
-                // std::cout << "Client connected successfully" << std::endl;
+                LOG_DEBUG("Client connected successfully");
 
                 // 使用阻塞socket，简化延迟测试逻辑
                 // int flags = fcntl(sockfd, F_GETFL, 0);
@@ -160,12 +172,20 @@ public:
     }
 
     void teardown() override {
+        LOG_INFO("LatencyTest teardown started");
+        
         if (loop_) {
             loop_->quit();
+            LOG_INFO("EventLoop quit called");
         }
         if (server_thread_ && server_thread_->joinable()) {
             server_thread_->join();
+            LOG_INFO("Server thread joined");
         }
+        
+        // 等待日志刷新
+        sleep(3);
+        LOG_INFO("LatencyTest teardown completed");
     }
 
 private:
@@ -249,6 +269,15 @@ int main(int argc, char* argv[]) {
     std::cout << "Starting latency test against " << server_ip << ":" << port << std::endl;
     run_latency_tests();
     std::cout << "Latency test completed." << std::endl;
+
+    // 检查是否有错误日志
+    if (!hasErrorLog()) {
+        std::cout << "No error logs found, cleaning up log files..." << std::endl;
+        cleanupLogFiles();
+        std::cout << "Log files cleaned up successfully." << std::endl;
+    } else {
+        std::cout << "Error logs found, keeping log files for inspection." << std::endl;
+    }
 
     return 0;
 }

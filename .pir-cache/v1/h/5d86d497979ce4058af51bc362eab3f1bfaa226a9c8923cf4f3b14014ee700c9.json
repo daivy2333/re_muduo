@@ -1,0 +1,20 @@
+{
+  "deps": [
+    "include:[TcpServer.h]",
+    "include:[Eventloop.h]",
+    "include:[benchmark_base.h]",
+    "include:[atomic]",
+    "include:[thread]",
+    "include:[memory]"
+  ],
+  "file": "../benchmark/echo_server_bench.h",
+  "hash": "5d86d497979ce4058af51bc362eab3f1bfaa226a9c8923cf4f3b14014ee700c9",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.717919",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

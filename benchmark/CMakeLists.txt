@@ -52,3 +52,4 @@ add_custom_target(benchmark
     DEPENDS echo_bench latency_test
     WORKING_DIRECTORY ${BENCHMARK_OUTPUT_PATH}
 )
+

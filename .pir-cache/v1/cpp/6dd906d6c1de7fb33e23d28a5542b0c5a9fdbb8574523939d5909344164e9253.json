@@ -1,0 +1,42 @@
+{
+  "deps": [
+    "include:[TimerQueue.h]",
+    "include:[Eventloop.h]",
+    "include:[Logger.h]",
+    "include:[sys/timerfd.h]",
+    "include:[unistd.h]",
+    "include:[string.h]",
+    "include:[algorithm]"
+  ],
+  "file": "../TimerQueue.cpp",
+  "hash": "6dd906d6c1de7fb33e23d28a5542b0c5a9fdbb8574523939d5909344164e9253",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "createTimerfd"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "howMuchTimeFromNow"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "resetTimerfd"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "readTimerfd"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.704182",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

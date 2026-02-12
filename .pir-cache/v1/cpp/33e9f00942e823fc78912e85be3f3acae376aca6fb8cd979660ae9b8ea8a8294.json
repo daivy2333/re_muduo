@@ -1,0 +1,15 @@
+{
+  "deps": [
+    "include:[Timer.h]"
+  ],
+  "file": "../Timer.cpp",
+  "hash": "33e9f00942e823fc78912e85be3f3acae376aca6fb8cd979660ae9b8ea8a8294",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.675914",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

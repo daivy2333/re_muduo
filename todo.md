@@ -1,6 +1,6 @@
 # re_muduo 项目开发计划
 mkdir build && cd build && cmake .. && make
-## 📅 第三阶段：异步日志系统（3-4天）
+## 📅 第三阶段：异步日志系统
 
 ### 🎯 目标：实现高性能异步日志
 
@@ -14,7 +14,7 @@ include/
 ├── LogStream.h
 └── Logging.h  # 增强版
 
-src/
+src/base
 ├── AsyncLogging.cpp
 ├── LogFile.cpp
 └── Logging.cpp
@@ -33,7 +33,6 @@ src/
 #include <memory>
 #include <atomic>
 
-namespace re_muduo {
 
 class AsyncLogging : noncopyable {
 public:
@@ -66,14 +65,12 @@ private:
     BufferVector buffers_;
 };
 
-} // namespace re_muduo
 ```
 
 #### 3. 在Logger中集成异步日志
 
 ```cpp
 // Logger.cpp中添加
-namespace re_muduo {
     AsyncLogging* g_asyncLog = nullptr;
 
     void asyncOutput(const char* msg, int len) {
@@ -92,7 +89,6 @@ namespace re_muduo {
             Logger::setOutput(asyncOutput);
         }
     }
-}
 ```
 
 ## 📅 第四阶段：优化Buffer和内存管理（2-3天）

@@ -1,6 +1,0 @@
-=== Latency Test Report ===
-Test Time: 1769490773098560085
-Clients: 1000
-Duration: 60s
-
-Testing payload size: 64 bytes

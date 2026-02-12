@@ -1,0 +1,20 @@
+{
+  "deps": [
+    "include:[Timer.h]",
+    "include:[Channel.h]",
+    "include:[noncopyable.h]",
+    "include:[set]",
+    "include:[vector]",
+    "include:[memory]"
+  ],
+  "file": "../TimerQueue.h",
+  "hash": "d7c7f35feda307cfe74f4e3864e4b6fed5678ad98a3b776476d6897790d7314a",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-12T07:18:22.700122",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

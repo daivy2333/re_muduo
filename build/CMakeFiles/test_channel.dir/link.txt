@@ -1,1 +1,0 @@
-/usr/bin/c++  -g -std=c++17 CMakeFiles/test_channel.dir/tests/test_channel.cpp.o -o bin/test_channel  -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/build/lib lib/libre_muduo.so -lpthread 

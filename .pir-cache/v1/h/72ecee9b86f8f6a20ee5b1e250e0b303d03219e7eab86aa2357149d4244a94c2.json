@@ -1,0 +1,27 @@
+{
+  "deps": [
+    "include:[iostream]",
+    "include:[string]"
+  ],
+  "file": "../Timestamp.h",
+  "hash": "72ecee9b86f8f6a20ee5b1e250e0b303d03219e7eab86aa2357149d4244a94c2",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "addTime"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "timeDifference"
+    }
+  ],
+  "timestamp": "2026-02-12T07:18:22.698969",
+  "unit": {
+    "module": "re_muduo",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}
