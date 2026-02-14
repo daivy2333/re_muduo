@@ -126,6 +126,11 @@
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -Dre_muduo_EXPORTS -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -fPIC -o CMakeFiles/re_muduo.dir/benchmark/benchmark_base.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
   "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timestamp.dir/tests/test_timestamp.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timestamp.cpp"
 },
@@ -218,6 +223,11 @@
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
   "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_timer_integration.dir/tests/test_timer_integration.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_integration.cpp",
   "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_timer_integration.cpp"
+},
+{
+  "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",
+  "command": "/usr/bin/g++ -I/home/daivy/projects/muduo_learn/re_muduo/include  -g -std=c++17 -g -o CMakeFiles/test_tcp_timer.dir/tests/test_tcp_timer.cpp.o -c /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcp_timer.cpp",
+  "file": "/home/daivy/projects/muduo_learn/re_muduo/tests/test_tcp_timer.cpp"
 },
 {
   "directory": "/home/daivy/projects/muduo_learn/re_muduo/build",

@@ -1,0 +1,26 @@
+{
+  "deps": [
+    "include:[LogStream.h]",
+    "include:[algorithm]",
+    "include:[cctype]",
+    "include:[cstdio]",
+    "include:[cstring]",
+    "include:[functional]"
+  ],
+  "file": "../src/base/LogStream.cpp",
+  "hash": "63faae6f8bace92f451d9618e9a8b0242ee0fb50cac3c5ae04580e22d05dc28a",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "convert"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.945449",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

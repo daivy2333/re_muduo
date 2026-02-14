@@ -1,0 +1,21 @@
+{
+  "deps": [
+    "include:[LogFile.h]",
+    "include:[FileUtil.h]",
+    "include:[ProcessInfo.h]",
+    "include:[time.h]",
+    "include:[sys/time.h]",
+    "include:[stdio.h]",
+    "include:[string.h]"
+  ],
+  "file": "../src/base/LogFile.cpp",
+  "hash": "c0804830ef4075c6df2d3f1202071a3a73eaa22aab7728cc9ad0dc90da63f974",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.944085",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

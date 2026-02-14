@@ -1,0 +1,57 @@
+{
+  "deps": [
+    "include:[Acceptor.h]",
+    "include:[Eventloop.h]",
+    "include:[InetAddress.h]",
+    "include:[Logger.h]",
+    "include:[cassert]",
+    "include:[iostream]",
+    "include:[sys/socket.h]",
+    "include:[unistd.h]",
+    "include:[thread]",
+    "include:[arpa/inet.h]",
+    "include:[memory]",
+    "include:[vector]",
+    "include:[condition_variable]",
+    "include:[mutex]",
+    "include:[atomic]"
+  ],
+  "file": "../tests/test_acceptor.cpp",
+  "hash": "67543016cc1941e2f08f7a1e84dd99b01493d2ce42dc5ae5e39d42a45ffed8c9",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "onNewConnection"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_acceptor_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_acceptor_listen"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_acceptor_multiple_connections"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.913877",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

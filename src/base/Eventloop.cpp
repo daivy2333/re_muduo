@@ -75,6 +75,12 @@ void EventLoop::loop()
     // quit_ = false;  // 注释掉这行，支持在调用loop()之前设置退出标志
     LOG_DEBUG("EventLoop %p start looping", this);
 
+    // 调用进入事件循环的回调函数
+    if (loopStartedCallback_)
+    {
+        loopStartedCallback_();
+    }
+
     while (!quit_)
     {
         activeChannels_.clear();
@@ -141,7 +147,8 @@ void EventLoop::wakeup()
     ssize_t n = ::write(wakeupFd_, &one, sizeof(one));
     if (n != sizeof(one))
     {
-        if (errno == EAGAIN || errno == EWOULDBLOCK)
+        int savedErrno = errno;
+        if (savedErrno == EAGAIN || savedErrno == EWOULDBLOCK)
         {
             // 计数器已经非零，说明之前有未处理的唤醒事件
             // 这是正常情况，不需要记录错误
@@ -149,7 +156,13 @@ void EventLoop::wakeup()
         }
         else
         {
-            LOG_ERROR("EventLoop::wakeup() writes %lu bytes instead of 8, errno=%d", n, errno);
+            // 其他错误，可能是wakeupFd_无效或系统错误
+            LOG_ERROR("EventLoop::wakeup() writes %ld bytes instead of 8, errno=%d", n, savedErrno);
+            // 如果wakeupFd_无效，尝试重新创建
+            if (savedErrno == EBADF || savedErrno == EINVAL)
+            {
+                LOG_FATAL("EventLoop::wakeup() wakeupFd_ is invalid, fd=%d", wakeupFd_);
+            }
         }
     }
 }
@@ -177,7 +190,8 @@ void EventLoop::removeChannel(Channel* channel)
         if (currentActiveChannel_ == channel)
         {
             // 正在处理这个channel，不能删除
-            assert(false);
+            LOG_ERROR("EventLoop::removeChannel() cannot remove channel %d while handling it", channel->fd());
+            return;
         }
         poller_->removeChannel(channel);
     }
@@ -201,7 +215,8 @@ void EventLoop::handleRead()
     ssize_t n = ::read(wakeupFd_, &one, sizeof(one));
     if (n != sizeof(one))
     {
-        if (errno == EAGAIN || errno == EWOULDBLOCK)
+        int savedErrno = errno;
+        if (savedErrno == EAGAIN || savedErrno == EWOULDBLOCK)
         {
             // 计数器为0，说明没有待处理的唤醒事件
             // 这是正常情况，不需要记录错误
@@ -209,7 +224,13 @@ void EventLoop::handleRead()
         }
         else
         {
-            LOG_ERROR("EventLoop::handleRead() reads %lu bytes instead of 8, errno=%d", n, errno);
+            // 其他错误，可能是wakeupFd_无效或系统错误
+            LOG_ERROR("EventLoop::handleRead() reads %ld bytes instead of 8, errno=%d", n, savedErrno);
+            // 如果wakeupFd_无效，记录严重错误
+            if (savedErrno == EBADF || savedErrno == EINVAL)
+            {
+                LOG_FATAL("EventLoop::handleRead() wakeupFd_ is invalid, fd=%d", wakeupFd_);
+            }
         }
     }
 }
@@ -226,7 +247,18 @@ void EventLoop::doPendingFunctors()
 
     for (const Functor& functor : functors)
     {
-        functor();
+        try
+        {
+            functor();
+        }
+        catch (const std::exception& e)
+        {
+            LOG_ERROR("EventLoop::doPendingFunctors() functor exception: %s", e.what());
+        }
+        catch (...)
+        {
+            LOG_ERROR("EventLoop::doPendingFunctors() functor unknown exception");
+        }
     }
 
     callingPendingFunctors_ = false;
@@ -240,29 +272,55 @@ void EventLoop::removeChannelInLoop(Channel* channel)
     if (currentActiveChannel_ == channel)
     {
         // 正在处理这个channel，不能删除
-        assert(false);
+        LOG_ERROR("EventLoop::removeChannelInLoop() cannot remove channel %d while handling it", channel->fd());
+        return;
     }
     poller_->removeChannel(channel);
 }
 
 TimerId EventLoop::runAt(Timestamp time, TimerCallback cb)
 {
+    if (!cb)
+    {
+        LOG_ERROR("EventLoop::runAt() callback is empty");
+        return TimerId();
+    }
+    if (!time.valid())
+    {
+        LOG_ERROR("EventLoop::runAt() invalid timestamp");
+        return TimerId();
+    }
     return timerQueue_->addTimer(std::move(cb), time, 0.0);
 }
 
 TimerId EventLoop::runAfter(double delay, TimerCallback cb)
 {
+    if (delay < 0)
+    {
+        LOG_ERROR("EventLoop::runAfter() invalid delay: %f", delay);
+        return TimerId();
+    }
     Timestamp time(addTime(Timestamp::now(), delay));
     return runAt(time, std::move(cb));
 }
 
 TimerId EventLoop::runEvery(double interval, TimerCallback cb)
 {
+    if (interval <= 0)
+    {
+        LOG_ERROR("EventLoop::runEvery() invalid interval: %f", interval);
+        return TimerId();
+    }
     Timestamp time(addTime(Timestamp::now(), interval));
     return timerQueue_->addTimer(std::move(cb), time, interval);
 }
 
 void EventLoop::cancel(TimerId timerId)
 {
+    if (!timerId.isValid())
+    {
+        LOG_ERROR("EventLoop::cancel() invalid timerId (timer_ is nullptr)");
+        return;
+    }
     timerQueue_->cancel(timerId);
 }

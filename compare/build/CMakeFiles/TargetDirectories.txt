@@ -1,0 +1,8 @@
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/muduo_latency_test.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/nginx_latency_test.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/edit_cache.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/rebuild_cache.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/list_install_components.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/install.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/install/local.dir
+/home/daivy/projects/muduo_learn/re_muduo/compare/build/CMakeFiles/install/strip.dir

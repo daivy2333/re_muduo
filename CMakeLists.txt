@@ -15,6 +15,9 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src/base SRC_LIST)
 # 排除旧的Logger.cpp，使用新的Logger_new.cpp
 list(REMOVE_ITEM SRC_LIST ${PROJECT_SOURCE_DIR}/src/base/Logger.cpp)
 
+# 只添加 benchmark_base.cpp 到库中
+list(APPEND SRC_LIST ${PROJECT_SOURCE_DIR}/benchmark/benchmark_base.cpp)
+
 add_library(re_muduo SHARED ${SRC_LIST})
 
 
@@ -97,6 +100,10 @@ add_test(NAME test_timer_class COMMAND test_timer_class)
 add_executable(test_timer_integration tests/test_timer_integration.cpp)
 target_link_libraries(test_timer_integration re_muduo pthread)
 add_test(NAME test_timer_integration COMMAND test_timer_integration)
+
+add_executable(test_tcp_timer tests/test_tcp_timer.cpp)
+target_link_libraries(test_tcp_timer re_muduo pthread)
+add_test(NAME test_tcp_timer COMMAND test_tcp_timer)
 
 add_executable(test_async_logging tests/test_async_logging.cpp)
 target_link_libraries(test_async_logging re_muduo pthread)

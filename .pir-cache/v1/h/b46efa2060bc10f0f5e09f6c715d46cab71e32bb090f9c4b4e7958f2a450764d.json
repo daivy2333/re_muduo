@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[string]",
+    "include:[functional]",
+    "include:[AsyncLogging.h]"
+  ],
+  "file": "../include/AsyncLoggingInit.h",
+  "hash": "b46efa2060bc10f0f5e09f6c715d46cab71e32bb090f9c4b4e7958f2a450764d",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.931371",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

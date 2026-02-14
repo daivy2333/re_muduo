@@ -1,0 +1,18 @@
+{
+  "deps": [
+    "include:[AsyncLogging.h]",
+    "include:[LogFile.h]",
+    "include:[Timestamp.h]",
+    "include:[stdio.h]"
+  ],
+  "file": "../src/base/AsyncLogging.cpp",
+  "hash": "8baca196361088cd4d9c2af21ed981be841a85651e54774a2f1f8264fb753ca2",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.939997",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

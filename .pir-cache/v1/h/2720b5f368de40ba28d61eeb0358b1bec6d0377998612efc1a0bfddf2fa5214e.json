@@ -1,0 +1,53 @@
+{
+  "deps": [
+    "include:[string]",
+    "include:[cstring]",
+    "include:[algorithm]"
+  ],
+  "file": "../include/LogStream.h",
+  "hash": "2720b5f368de40ba28d61eeb0358b1bec6d0377998612efc1a0bfddf2fa5214e",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "append"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "reset"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "bzero"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "append"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "add"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "reset"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "bzero"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.921031",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

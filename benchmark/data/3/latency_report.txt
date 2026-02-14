@@ -1,0 +1,41 @@
+=== Latency Test Report ===
+Test Time: 1771004730811242911
+Clients: 1000
+Duration: 60s
+
+Testing payload size: 64 bytes
+  Avg Latency: 3.266 ms
+  P50 Latency: 3.144 ms
+  P95 Latency: 4.059 ms
+  P99 Latency: 6.481 ms
+
+Testing payload size: 256 bytes
+  Avg Latency: 3.221 ms
+  P50 Latency: 3.082 ms
+  P95 Latency: 3.966 ms
+  P99 Latency: 6.397 ms
+
+Testing payload size: 1024 bytes
+  Avg Latency: 3.332 ms
+  P50 Latency: 3.174 ms
+  P95 Latency: 4.166 ms
+  P99 Latency: 7.263 ms
+
+Testing payload size: 4096 bytes
+  Avg Latency: 3.736 ms
+  P50 Latency: 3.536 ms
+  P95 Latency: 4.831 ms
+  P99 Latency: 8.638 ms
+
+Testing payload size: 16384 bytes
+  Avg Latency: 5.001 ms
+  P50 Latency: 4.792 ms
+  P95 Latency: 6.487 ms
+  P99 Latency: 12.223 ms
+
+Testing payload size: 65536 bytes
+  Avg Latency: 10.531 ms
+  P50 Latency: 9.304 ms
+  P95 Latency: 17.941 ms
+  P99 Latency: 24.678 ms
+

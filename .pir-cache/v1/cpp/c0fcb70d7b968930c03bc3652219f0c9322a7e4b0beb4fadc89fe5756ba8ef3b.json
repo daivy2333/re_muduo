@@ -1,0 +1,56 @@
+{
+  "deps": [
+    "include:[ProcessInfo.h]",
+    "include:[CurrentThread.h]",
+    "include:[unistd.h]",
+    "include:[sys/types.h]",
+    "include:[sys/resource.h]",
+    "include:[pwd.h]",
+    "include:[sys/sysinfo.h]",
+    "include:[dirent.h]",
+    "include:[stdlib.h]",
+    "include:[stdio.h]",
+    "include:[string.h]"
+  ],
+  "file": "../src/base/ProcessInfo.cpp",
+  "hash": "c0fcb70d7b968930c03bc3652219f0c9322a7e4b0beb4fadc89fe5756ba8ef3b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "pid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "uid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "euid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "openFiles"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "maxOpenFiles"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "threads"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.956793",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

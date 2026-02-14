@@ -35,6 +35,9 @@ public:
 
     // 启动事件循环，必须在创建EventLoop的线程中调用
     void loop();
+
+    // 设置进入事件循环的回调函数
+    void setLoopStartedCallback(std::function<void()> cb) { loopStartedCallback_ = cb; }
     
     // 退出事件循环，可以在其他线程安全调用
     void quit();
@@ -107,4 +110,5 @@ private:
     std::vector<Functor> pendingFunctors_;  // 待执行的回调函数队列
     std::mutex mutex_;                      // 保护pendingFunctors_的互斥锁
     std::unique_ptr<TimerQueue> timerQueue_; // 定时器队列
+    std::function<void()> loopStartedCallback_; // 进入事件循环的回调函数
 };

@@ -27,7 +27,11 @@ public:
     /**
      * @brief 执行定时器回调
      */
-    void run() const { callback_(); }
+    void run() const { 
+        if (callback_) {
+            callback_();
+        }
+    }
 
     /**
      * @brief 获取过期时间
@@ -78,6 +82,12 @@ class TimerId {
 public:
     TimerId() : timer_(nullptr), sequence_(0) {}
     TimerId(Timer* timer, int64_t seq) : timer_(timer), sequence_(seq) {}
+
+    /**
+     * @brief 检查TimerId是否有效
+     * @return true表示有效，false表示无效
+     */
+    bool isValid() const { return timer_ != nullptr; }
 
 private:
     Timer* timer_;      ///< 指向Timer对象的指针

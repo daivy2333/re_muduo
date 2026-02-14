@@ -1,0 +1,28 @@
+{
+  "deps": [
+    "include:[Callbacks.h]",
+    "include:[Timestamp.h]",
+    "include:[atomic]"
+  ],
+  "file": "../include/Timer.h",
+  "hash": "c0ac83363476b0754ecba0aaea479a6442777c9b4af1798d40db6877215b7ee9",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "run"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "numCreated"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.925889",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

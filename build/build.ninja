@@ -249,6 +249,14 @@ build CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o: CXX_COMPILER__re_muduo_D
   OBJECT_DIR = CMakeFiles/re_muduo.dir
   OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/src/base
 
+build CMakeFiles/re_muduo.dir/benchmark/benchmark_base.cpp.o: CXX_COMPILER__re_muduo_Debug /home/daivy/projects/muduo_learn/re_muduo/benchmark/benchmark_base.cpp || cmake_object_order_depends_target_re_muduo
+  DEFINES = -Dre_muduo_EXPORTS
+  DEP_FILE = CMakeFiles/re_muduo.dir/benchmark/benchmark_base.cpp.o.d
+  FLAGS = -g -std=c++17 -g -fPIC
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/re_muduo.dir
+  OBJECT_FILE_DIR = CMakeFiles/re_muduo.dir/benchmark
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target re_muduo
@@ -257,7 +265,7 @@ build CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o: CXX_COMPILER__re_muduo_D
 #############################################
 # Link the shared library ../lib/libre_muduo.so
 
-build ../lib/libre_muduo.so: CXX_SHARED_LIBRARY_LINKER__re_muduo_Debug CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o
+build ../lib/libre_muduo.so: CXX_SHARED_LIBRARY_LINKER__re_muduo_Debug CMakeFiles/re_muduo.dir/src/base/Acceptor.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLogging.cpp.o CMakeFiles/re_muduo.dir/src/base/AsyncLoggingInit.cpp.o CMakeFiles/re_muduo.dir/src/base/Buffer.cpp.o CMakeFiles/re_muduo.dir/src/base/Channel.cpp.o CMakeFiles/re_muduo.dir/src/base/CurrentThread.cpp.o CMakeFiles/re_muduo.dir/src/base/DefaultPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EpollPoller.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThread.cpp.o CMakeFiles/re_muduo.dir/src/base/EventLoopThreadPool.cpp.o CMakeFiles/re_muduo.dir/src/base/Eventloop.cpp.o CMakeFiles/re_muduo.dir/src/base/FileUtil.cpp.o CMakeFiles/re_muduo.dir/src/base/InetAddress.cpp.o CMakeFiles/re_muduo.dir/src/base/LogFile.cpp.o CMakeFiles/re_muduo.dir/src/base/LogStream.cpp.o CMakeFiles/re_muduo.dir/src/base/Logger_new.cpp.o CMakeFiles/re_muduo.dir/src/base/Poller.cpp.o CMakeFiles/re_muduo.dir/src/base/ProcessInfo.cpp.o CMakeFiles/re_muduo.dir/src/base/Socket.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpConnection.cpp.o CMakeFiles/re_muduo.dir/src/base/TcpServer.cpp.o CMakeFiles/re_muduo.dir/src/base/Thread.cpp.o CMakeFiles/re_muduo.dir/src/base/Timer.cpp.o CMakeFiles/re_muduo.dir/src/base/TimerQueue.cpp.o CMakeFiles/re_muduo.dir/src/base/Timestamp.cpp.o CMakeFiles/re_muduo.dir/benchmark/benchmark_base.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -std=c++17 -g
   OBJECT_DIR = CMakeFiles/re_muduo.dir
   POST_BUILD = :
@@ -895,6 +903,39 @@ build ../bin/test_timer_integration: CXX_EXECUTABLE_LINKER__test_timer_integrati
   TARGET_PDB = test_timer_integration.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_tcp_timer
+
+
+#############################################
+# Order-only phony target for test_tcp_timer
+
+build cmake_object_order_depends_target_test_tcp_timer: phony || cmake_object_order_depends_target_re_muduo
+
+build CMakeFiles/test_tcp_timer.dir/tests/test_tcp_timer.cpp.o: CXX_COMPILER__test_tcp_timer_Debug /home/daivy/projects/muduo_learn/re_muduo/tests/test_tcp_timer.cpp || cmake_object_order_depends_target_test_tcp_timer
+  DEP_FILE = CMakeFiles/test_tcp_timer.dir/tests/test_tcp_timer.cpp.o.d
+  FLAGS = -g -std=c++17 -g
+  INCLUDES = -I/home/daivy/projects/muduo_learn/re_muduo/include
+  OBJECT_DIR = CMakeFiles/test_tcp_timer.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_tcp_timer.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_tcp_timer
+
+
+#############################################
+# Link the executable ../bin/test_tcp_timer
+
+build ../bin/test_tcp_timer: CXX_EXECUTABLE_LINKER__test_tcp_timer_Debug CMakeFiles/test_tcp_timer.dir/tests/test_tcp_timer.cpp.o | ../lib/libre_muduo.so || ../lib/libre_muduo.so
+  FLAGS = -g -std=c++17 -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/daivy/projects/muduo_learn/re_muduo/lib  ../lib/libre_muduo.so  -lpthread
+  OBJECT_DIR = CMakeFiles/test_tcp_timer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/test_tcp_timer
+  TARGET_PDB = test_tcp_timer.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_async_logging
 
 
@@ -1210,6 +1251,8 @@ build test_poller: phony ../bin/test_poller
 
 build test_socket: phony ../bin/test_socket
 
+build test_tcp_timer: phony ../bin/test_tcp_timer
+
 build test_tcpconnection: phony ../bin/test_tcpconnection
 
 build test_tcpserver: phony ../bin/test_tcpserver
@@ -1234,7 +1277,7 @@ build test_timestamp: phony ../bin/test_timestamp
 #############################################
 # Folder: /home/daivy/projects/muduo_learn/re_muduo/build
 
-build all: phony ../lib/libre_muduo.so ../bin/test_timestamp ../bin/test_inetaddress ../bin/test_logger ../bin/test_currentthread ../bin/test_eventloop ../bin/test_channel ../bin/test_poller ../bin/test_thread ../bin/test_eventloopthread ../bin/test_eventloopthreadpool ../bin/test_socket ../bin/test_acceptor ../bin/test_tcpserver ../bin/test_buffer ../bin/test_tcpconnection ../bin/test_timer ../bin/test_timer_queue ../bin/test_timer_class ../bin/test_timer_integration ../bin/test_async_logging benchmark/all
+build all: phony ../lib/libre_muduo.so ../bin/test_timestamp ../bin/test_inetaddress ../bin/test_logger ../bin/test_currentthread ../bin/test_eventloop ../bin/test_channel ../bin/test_poller ../bin/test_thread ../bin/test_eventloopthread ../bin/test_eventloopthreadpool ../bin/test_socket ../bin/test_acceptor ../bin/test_tcpserver ../bin/test_buffer ../bin/test_tcpconnection ../bin/test_timer ../bin/test_timer_queue ../bin/test_timer_class ../bin/test_timer_integration ../bin/test_tcp_timer ../bin/test_async_logging benchmark/all
 
 # =============================================================================
 

@@ -1,0 +1,22 @@
+{
+  "deps": [
+    "include:[FileUtil.h]",
+    "include:[errno.h]",
+    "include:[stdio.h]",
+    "include:[string.h]",
+    "include:[assert.h]",
+    "include:[sys/stat.h]",
+    "include:[sys/types.h]",
+    "include:[libgen.h]"
+  ],
+  "file": "../src/base/FileUtil.cpp",
+  "hash": "c86d23a5789090e5541fbc56a44244166c48a58d3916976643a8fa6f22e4eab8",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.950705",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

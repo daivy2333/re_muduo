@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[Mutex.h]",
+    "include:[string]",
+    "include:[memory]"
+  ],
+  "file": "../include/LogFile.h",
+  "hash": "4d5da1d924a5753333d1d0f88e526c02556c0ae28cbe6f641d0e6eac423e3865",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.924852",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

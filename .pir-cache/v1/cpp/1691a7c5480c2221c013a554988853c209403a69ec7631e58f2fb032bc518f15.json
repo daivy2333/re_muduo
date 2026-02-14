@@ -1,0 +1,77 @@
+{
+  "deps": [
+    "include:[Buffer.h]",
+    "include:[iostream]",
+    "include:[string]",
+    "include:[cassert]",
+    "include:[cstring]"
+  ],
+  "file": "../tests/test_buffer.cpp",
+  "hash": "1691a7c5480c2221c013a554988853c209403a69ec7631e58f2fb032bc518f15",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferEmpty"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferAppendRetrieve"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferRetrieveAsString"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferGrow"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferAppendVoidPtr"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferInsideGrow"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferShrink"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferPrepend"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferReadInt"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBufferFindCRLF"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.890564",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

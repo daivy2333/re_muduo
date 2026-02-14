@@ -1,0 +1,25 @@
+{
+  "deps": [
+    "include:[Thread.h]",
+    "include:[cstdio]",
+    "include:[sstream]",
+    "include:[sys/syscall.h]",
+    "include:[sys/types.h]"
+  ],
+  "file": "../src/base/Thread.cpp",
+  "hash": "4333744b3f341c96ae8c873891c5f37687df5996dce0fa2539333daf6d7bae77",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "gettid"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.941379",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

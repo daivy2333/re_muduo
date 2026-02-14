@@ -4,6 +4,7 @@
 #include "Acceptor.h"
 #include "Socket.h"
 #include "Logger.h"
+#include "Timer.h"
 #include <stdio.h>
 #include <assert.h>
 #include <functional>
@@ -22,7 +23,11 @@ TcpServer::TcpServer(EventLoop *loop, const InetAddress &listenAddr, Option opti
       writeCompleteCallback_(),
       threadInitCallback_(),
       started_(0),
-      nextConnId_(1)
+      nextConnId_(1),
+      connectionTimeout_(0),
+      idleTimeout_(0),
+      keepAliveEnabled_(false),
+      keepAliveInterval_(30)
 {
     LOG_INFO("TcpServer created, name=%s, listening on %s", name_.c_str(), ipPort_.c_str());
     acceptor_->setNewConnectionCallback(
@@ -80,6 +85,18 @@ void TcpServer::newConnection(int sockfd, const InetAddress &peerAddr)
     conn->setWriteCompleteCallback(writeCompleteCallback_);
     conn->setCloseCallback(
         bind(&TcpServer::removeConnection, this, _1));
+    
+    // 应用超时设置
+    if (connectionTimeout_ > 0) {
+        conn->setConnectionTimeout(connectionTimeout_);
+    }
+    if (idleTimeout_ > 0) {
+        conn->setIdleTimeout(idleTimeout_);
+    }
+    if (keepAliveEnabled_) {
+        conn->enableKeepAlive(true, keepAliveInterval_);
+    }
+    
     ioLoop->runInLoop(bind(&TcpConnection::connectEstablished, conn));
     LOG_INFO("New connection from %s to %s, name=%s", 
               peerAddr.toIpPort().c_str(), 

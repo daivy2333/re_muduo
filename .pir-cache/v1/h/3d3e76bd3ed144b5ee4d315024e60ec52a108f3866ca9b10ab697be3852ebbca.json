@@ -1,0 +1,43 @@
+{
+  "deps": [
+    "include:[Mutex.h]",
+    "include:[pthread.h]",
+    "include:[errno.h]"
+  ],
+  "file": "../include/Condition.h",
+  "hash": "3d3e76bd3ed144b5ee4d315024e60ec52a108f3866ca9b10ab697be3852ebbca",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "Condition"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "wait"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "waitForSeconds"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "notify"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "notifyAll"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.929652",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

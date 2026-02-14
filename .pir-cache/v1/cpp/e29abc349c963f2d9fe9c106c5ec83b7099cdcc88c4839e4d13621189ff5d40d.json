@@ -1,0 +1,33 @@
+{
+  "deps": [
+    "include:[benchmark_base.h]",
+    "include:[echo_server_bench.h]",
+    "include:[AsyncLoggingInit.h]",
+    "include:[fstream]",
+    "include:[iomanip]",
+    "include:[iostream]"
+  ],
+  "file": "../benchmark/throughput_test.cpp",
+  "hash": "e29abc349c963f2d9fe9c106c5ec83b7099cdcc88c4839e4d13621189ff5d40d",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "run_throughput_benchmark"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.936102",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

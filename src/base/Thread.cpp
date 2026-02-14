@@ -36,6 +36,9 @@ Thread::~Thread() {
 }
 
 void Thread::start() {
+    if (m_started) {
+        throw std::runtime_error("Thread already started");
+    }
     m_started = true;
     m_thread = std::make_shared<std::thread>([this]() {
         m_tid = gettid();

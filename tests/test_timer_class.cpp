@@ -3,10 +3,12 @@
 #include "Logger.h"
 #include <cassert>
 #include <iostream>
+#include <exception>
+#include <stdexcept>
 
 /**
  * @brief 测试Timer类的基本功能
- * 
+ *
  * 测试内容：
  * 1. 创建一次性定时器
  * 2. 创建周期性定时器
@@ -32,7 +34,7 @@ void test_timer_basic()
     assert(oneShotTimer.expiration() == when); // 过期时间应该正确
     assert(oneShotTimer.sequence() >= 0); // 序列号应该有效
 
-    LOG_INFO("One-shot timer created, expiration: %s", 
+    LOG_INFO("One-shot timer created, expiration: %s",
              oneShotTimer.expiration().to_string().c_str());
 
     // 2. 创建周期性定时器
@@ -80,7 +82,7 @@ void test_timer_basic()
 
 /**
  * @brief 测试Timer的序列号生成
- * 
+ *
  * 测试内容：
  * 1. 创建多个定时器
  * 2. 验证序列号是递增的
@@ -123,7 +125,7 @@ void test_timer_sequence()
 
 /**
  * @brief 测试Timer的过期时间计算
- * 
+ *
  * 测试内容：
  * 1. 创建不同延迟的定时器
  * 2. 验证过期时间计算正确
@@ -174,11 +176,205 @@ void test_timer_expiration()
     LOG_INFO("Timer expiration test passed");
 }
 
+/**
+ * @brief 测试Timer回调抛出异常的情况
+ */
+void test_timer_callback_exception()
+{
+    LOG_INFO("=== Test Timer callback exception ===");
+
+    bool exceptionCaught = false;
+    int callbackCount = 0;
+
+    TimerCallback cb = [&callbackCount]() {
+        callbackCount++;
+        if (callbackCount == 2) {
+            LOG_INFO("Timer callback throwing exception");
+            throw std::runtime_error("Test exception");
+        }
+    };
+
+    Timestamp now = Timestamp::now();
+    Timestamp when = addTime(now, 0.1);
+    Timer timer(cb, when, 0.0);
+
+    // 第一次调用应该成功
+    try {
+        timer.run();
+        assert(callbackCount == 1);
+    } catch (...) {
+        assert(false); // 不应该抛出异常
+    }
+
+    // 第二次调用应该抛出异常
+    try {
+        timer.run();
+        assert(false); // 不应该到达这里
+    } catch (const std::exception& e) {
+        exceptionCaught = true;
+        assert(callbackCount == 2);
+        LOG_INFO("Caught expected exception: %s", e.what());
+    }
+
+    assert(exceptionCaught);
+
+    LOG_INFO("Timer callback exception test passed");
+}
+
+/**
+ * @brief 测试无效时间戳的处理
+ */
+void test_timer_invalid_timestamp()
+{
+    LOG_INFO("=== Test Timer with invalid timestamp ===");
+
+    TimerCallback cb = []() {
+        LOG_INFO("Timer callback");
+    };
+
+    // 创建一个无效时间戳
+    Timestamp invalid = Timestamp::invalid();
+
+    // 使用无效时间戳创建定时器
+    Timer timer(cb, invalid, 0.0);
+
+    // 验证过期时间无效
+    assert(!timer.expiration().valid());
+
+    // 测试restart时传入无效时间戳
+    Timestamp now = Timestamp::now();
+    Timer periodicTimer(cb, addTime(now, 0.1), 0.2);
+
+    periodicTimer.restart(invalid);
+
+    // 验证周期性定时器在无效时间戳下也变为无效
+    assert(!periodicTimer.expiration().valid());
+
+    LOG_INFO("Timer invalid timestamp test passed");
+}
+
+/**
+ * @brief 测试Timer的空回调
+ */
+void test_timer_null_callback()
+{
+    LOG_INFO("=== Test Timer with null callback ===");
+
+    // 创建一个空回调的定时器
+    TimerCallback cb = nullptr;
+
+    Timestamp now = Timestamp::now();
+    Timestamp when = addTime(now, 0.1);
+
+    Timer timer(cb, when, 0.0);
+
+    // 调用run不应该崩溃
+    timer.run();
+
+    LOG_INFO("Timer null callback test passed");
+}
+
+/**
+ * @brief 测试极短间隔的定时器
+ */
+void test_timer_very_short_interval()
+{
+    LOG_INFO("=== Test Timer with very short interval ===");
+
+    int callbackCount = 0;
+    TimerCallback cb = [&callbackCount]() {
+        callbackCount++;
+    };
+
+    Timestamp now = Timestamp::now();
+    Timestamp when = addTime(now, 0.001); // 1毫秒
+
+    Timer timer(cb, when, 0.001); // 1毫秒间隔
+
+    // 验证是周期性定时器
+    assert(timer.repeat());
+
+    // 测试多次restart
+    for (int i = 0; i < 10; ++i) {
+        Timestamp newTime = Timestamp::now();
+        timer.restart(newTime);
+        assert(timer.expiration().valid());
+    }
+
+    LOG_INFO("Timer very short interval test passed");
+}
+
+/**
+ * @brief 测试Timer的负间隔
+ */
+void test_timer_negative_interval()
+{
+    LOG_INFO("=== Test Timer with negative interval ===");
+
+    TimerCallback cb = []() {
+        LOG_INFO("Timer callback");
+    };
+
+    Timestamp now = Timestamp::now();
+    Timestamp when = addTime(now, 0.1);
+
+    // 创建一个负间隔的定时器（应该被视为非重复定时器）
+    Timer timer(cb, when, -0.1);
+
+    // 验证不是重复定时器
+    assert(!timer.repeat());
+
+    // 测试restart
+    Timestamp newTime = Timestamp::now();
+    timer.restart(newTime);
+
+    // 验证过期时间无效
+    assert(!timer.expiration().valid());
+
+    LOG_INFO("Timer negative interval test passed");
+}
+
+/**
+ * @brief 测试Timer的零间隔
+ */
+void test_timer_zero_interval()
+{
+    LOG_INFO("=== Test Timer with zero interval ===");
+
+    TimerCallback cb = []() {
+        LOG_INFO("Timer callback");
+    };
+
+    Timestamp now = Timestamp::now();
+    Timestamp when = addTime(now, 0.1);
+
+    // 创建一个零间隔的定时器（应该被视为非重复定时器）
+    Timer timer(cb, when, 0.0);
+
+    // 验证不是重复定时器
+    assert(!timer.repeat());
+
+    // 测试restart
+    Timestamp newTime = Timestamp::now();
+    timer.restart(newTime);
+
+    // 验证过期时间无效
+    assert(!timer.expiration().valid());
+
+    LOG_INFO("Timer zero interval test passed");
+}
+
 int main()
 {
     test_timer_basic();
     test_timer_sequence();
     test_timer_expiration();
+    test_timer_callback_exception();
+    test_timer_invalid_timestamp();
+    test_timer_null_callback();
+    test_timer_very_short_interval();
+    test_timer_negative_interval();
+    test_timer_zero_interval();
 
     LOG_INFO("All Timer class tests passed!");
     return 0;

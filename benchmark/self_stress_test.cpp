@@ -314,6 +314,6 @@ int main(int argc, char* argv[]) {
     } else {
         std::cout << "Error logs found, keeping log files for inspection." << std::endl;
     }
-
+ cout<< "done" << endl;
     return 0;
 }

@@ -1,0 +1,15 @@
+{
+  "deps": [
+    "include:[Timer.h]"
+  ],
+  "file": "../src/base/Timer.cpp",
+  "hash": "c49fd78e49723fcce0bd30a89aff12c8e82aebe359e883dc3a364e9f75888cbb",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.936514",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

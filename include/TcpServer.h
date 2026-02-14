@@ -4,6 +4,7 @@
 #include "Acceptor.h"
 #include "InetAddress.h"
 #include "noncopyable.h"
+#include "Timer.h"
 using namespace std;
 #include <functional>
 #include <string>
@@ -31,10 +32,19 @@ public:
     void setWriteCompleteCallback(const WriteCompleteCallback &cb) {writeCompleteCallback_ = cb;}
     void setThreadNum(int numThreads);
     void start();
+    
+    // 服务器级超时设置
+    void setConnectionTimeout(double seconds) { connectionTimeout_ = seconds; }
+    void setIdleTimeout(double seconds) { idleTimeout_ = seconds; }
+    void setKeepAlive(bool enable, int interval = 30) {
+        keepAliveEnabled_ = enable;
+        keepAliveInterval_ = interval;
+    }
 private:
     void newConnection(int sockfd, const InetAddress &peerAddr);
     void removeConnection(const TcpConnectionPtr &conn);
     void removeConnectionInLoop(const TcpConnectionPtr &conn);
+    void printConnectionsStat();
 
     using ConnectionMap = unordered_map<string, TcpConnectionPtr>;
     EventLoop *loop_;
@@ -52,4 +62,13 @@ private:
 
     int nextConnId_;
     ConnectionMap connections_;
+    
+    // 超时配置
+    double connectionTimeout_;
+    double idleTimeout_;
+    bool keepAliveEnabled_;
+    int keepAliveInterval_;
+    
+    // 连接统计
+    TimerId statTimerId_;
 };

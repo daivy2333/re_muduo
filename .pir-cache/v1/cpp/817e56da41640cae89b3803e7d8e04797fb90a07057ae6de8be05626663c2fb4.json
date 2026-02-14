@@ -1,0 +1,196 @@
+{
+  "deps": [
+    "include:[Thread.h]",
+    "include:[CurrentThread.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[vector]",
+    "include:[chrono]",
+    "include:[atomic]",
+    "include:[set]",
+    "include:[memory]"
+  ],
+  "file": "../tests/test_thread.cpp",
+  "hash": "817e56da41640cae89b3803e7d8e04797fb90a07057ae6de8be05626663c2fb4",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_id"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_default_naming"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_concurrent_threads"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_count"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t1"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t2"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multiple_join"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_duplicate_start"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_destructor_detach"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_exception"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_currentthread_tid_isolation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_unstarted_thread_tid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_high_concurrent_thread_count"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_name_edge_cases"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t1"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t2"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "t3"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_join_thread_safety"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_resource_management"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_join_without_start"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_self_access"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_massive_thread_creation"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.904203",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

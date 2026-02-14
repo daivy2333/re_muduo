@@ -1,0 +1,89 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Channel.h]",
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[unistd.h]",
+    "include:[sys/eventfd.h]",
+    "include:[vector]",
+    "include:[atomic]",
+    "include:[memory]",
+    "include:[stdexcept]"
+  ],
+  "file": "../tests/test_eventloop.cpp",
+  "hash": "8dd694c30980b6a3dd64d4909d129c5b39e0d0c3e2a90af2e95d7c296e58f688",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_basic"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_channel"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_runinloop"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_queueinloop"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_wakeup"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_pollreturntime"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_write_event"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_close_event"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_tie"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_haschannel"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_isinloopthread"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.901450",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

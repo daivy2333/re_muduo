@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[LogStream.h]",
+    "include:[Thread.h]",
+    "include:[Mutex.h]",
+    "include:[Condition.h]",
+    "include:[noncopyable.h]",
+    "include:[vector]",
+    "include:[memory]",
+    "include:[atomic]",
+    "include:[string]"
+  ],
+  "file": "../include/AsyncLogging.h",
+  "hash": "4aba89a3ef9fcbb03a65afa34e15907fff621244cf1d01953d6460c333fa66a0",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.930972",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

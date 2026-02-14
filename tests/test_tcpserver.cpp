@@ -149,6 +149,41 @@ void test_thread_init_callback() {
     cout << "Thread init callback test passed" << endl;
 }
 
+// 测试服务器级超时设置
+void test_server_timeout_settings() {
+    cout << "=== Test Server Timeout Settings ===" << endl;
+
+    EventLoop loop;
+    InetAddress listenAddr(9985);
+    TcpServer server(&loop, listenAddr, TcpServer::kReusePort);
+
+    // 设置服务器级超时
+    server.setConnectionTimeout(10.0);
+    server.setIdleTimeout(30.0);
+    server.setKeepAlive(true, 15);
+
+    server.setConnectionCallback([](const TcpConnectionPtr& conn) {
+        cout << "Connection " << (conn->connected() ? "established" : "destroyed") << endl;
+    });
+
+    server.setMessageCallback([](const TcpConnectionPtr& conn, Buffer* buf, Timestamp) {
+        cout << "Received message" << endl;
+    });
+
+    server.start();
+
+    // 运行一段时间后退出
+    thread t([&loop]() {
+        this_thread::sleep_for(chrono::milliseconds(100));
+        loop.quit();
+    });
+    t.detach();
+
+    loop.loop();
+
+    cout << "Server timeout settings test passed" << endl;
+}
+
 int main() {
     cout << "=== TcpServer Tests ===" << endl;
 
@@ -156,6 +191,7 @@ int main() {
     test_multithread();
     test_connection_management();
     test_thread_init_callback();
+    test_server_timeout_settings();
 
     cout << "=== All TcpServer Tests Passed ===" << endl;
     return 0;

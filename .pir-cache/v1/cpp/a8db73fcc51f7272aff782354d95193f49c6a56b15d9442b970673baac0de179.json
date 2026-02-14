@@ -1,0 +1,80 @@
+{
+  "deps": [
+    "include:[CurrentThread.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[vector]",
+    "include:[chrono]",
+    "include:[atomic]",
+    "include:[set]"
+  ],
+  "file": "../tests/test_currentthread.cpp",
+  "hash": "a8db73fcc51f7272aff782354d95193f49c6a56b15d9442b970673baac0de179",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_current_thread_tid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multiple_threads"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_local_storage"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_nested_threads"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_tid_stability"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_massive_concurrent_threads"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_thread_reuse"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_main_thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_tid_performance"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_tid_edge_cases"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.905476",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

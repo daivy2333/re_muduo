@@ -1,0 +1,30 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Poller.h]",
+    "include:[Logger.h]",
+    "include:[TimerQueue.h]",
+    "include:[sys/eventfd.h]",
+    "include:[unistd.h]",
+    "include:[fcntl.h]",
+    "include:[errno.h]",
+    "include:[cassert]",
+    "include:[algorithm]"
+  ],
+  "file": "../src/base/Eventloop.cpp",
+  "hash": "2e55cc9ee21ab130a8aa0c11ceb5e1db5980802543ee7c2bd95928b810f60c49",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "createEventfd"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.947695",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

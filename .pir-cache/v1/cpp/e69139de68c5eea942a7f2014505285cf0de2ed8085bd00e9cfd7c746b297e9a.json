@@ -1,0 +1,74 @@
+{
+  "deps": [
+    "include:[Timer.h]",
+    "include:[Timestamp.h]",
+    "include:[Logger.h]",
+    "include:[cassert]",
+    "include:[iostream]",
+    "include:[exception]",
+    "include:[stdexcept]"
+  ],
+  "file": "../tests/test_timer_class.cpp",
+  "hash": "e69139de68c5eea942a7f2014505285cf0de2ed8085bd00e9cfd7c746b297e9a",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_basic"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_sequence"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_expiration"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_callback_exception"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_invalid_timestamp"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_null_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_very_short_interval"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_negative_interval"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_zero_interval"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.892621",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

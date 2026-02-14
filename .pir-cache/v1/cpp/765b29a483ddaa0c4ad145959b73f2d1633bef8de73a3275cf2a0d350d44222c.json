@@ -1,0 +1,49 @@
+{
+  "deps": [
+    "include:[AsyncLoggingInit.h]",
+    "include:[Logger.h]",
+    "include:[memory]",
+    "include:[cstdlib]"
+  ],
+  "file": "../src/base/AsyncLoggingInit.cpp",
+  "hash": "765b29a483ddaa0c4ad145959b73f2d1633bef8de73a3275cf2a0d350d44222c",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "initAsyncLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "resetAsyncLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "setAsyncOutput"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "enableTestMode"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "hasErrorLog"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "cleanupLogFiles"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.948398",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

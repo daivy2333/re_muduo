@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/muduo_latency_test.dir/muduo/latency_test.cpp.o -o muduo_latency_test  -lpthread /usr/local/lib/libmuduo_net.a /usr/local/lib/libmuduo_base.a 

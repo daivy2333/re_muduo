@@ -8,19 +8,34 @@
 #include <unistd.h>
 #include <thread>
 #include <arpa/inet.h>
+#include <memory>
+#include <vector>
+#include <condition_variable>
+#include <mutex>
+#include <atomic>
 
 // 测试新连接的回调函数
-int newConnectionCount = 0;
+std::atomic<int> newConnectionCount{0};
 int lastConnfd = -1;
-InetAddress* lastPeerAddr = nullptr;
+std::unique_ptr<InetAddress> lastPeerAddr;
+
+// 连接信息结构体
+struct ConnectionInfo {
+    int connfd;
+    InetAddress peerAddr;
+};
+
+std::vector<ConnectionInfo> connectionInfos;
+std::mutex connectionMutex;
 
 void onNewConnection(int connfd, const InetAddress& peerAddr) {
     newConnectionCount++;
     lastConnfd = connfd;
-    if (lastPeerAddr == nullptr) {
-        lastPeerAddr = new InetAddress(peerAddr);
-    } else {
-        *lastPeerAddr = peerAddr;
+    lastPeerAddr = std::make_unique<InetAddress>(peerAddr);
+
+    {
+        std::lock_guard<std::mutex> lock(connectionMutex);
+        connectionInfos.push_back({connfd, peerAddr});
     }
     std::cout << "New connection from: " << peerAddr.toIpPort() 
               << ", connfd: " << connfd << std::endl;
@@ -31,9 +46,15 @@ void test_acceptor_creation() {
 
     EventLoop loop;
     InetAddress listenAddr(18084, "127.0.0.1");
-    Acceptor acceptor(&loop, listenAddr, true);
 
-    assert(!acceptor.listenning());
+    // 测试 reuseport 为 true 的情况
+    Acceptor acceptor1(&loop, listenAddr, true);
+    assert(!acceptor1.listenning());
+
+    // 测试 reuseport 为 false 的情况
+    InetAddress listenAddr2(18085, "127.0.0.1");
+    Acceptor acceptor2(&loop, listenAddr2, false);
+    assert(!acceptor2.listenning());
 
     std::cout << "Acceptor creation test passed" << std::endl;
     std::cout << std::endl;
@@ -44,14 +65,16 @@ void test_acceptor_listen() {
 
     EventLoop* loop = nullptr;
     Acceptor* acceptor = nullptr;
-    bool testDone = false;
+    std::mutex loopMutex;
+    std::condition_variable loopCV;
+    bool loopReady = false;
 
     // 在IO线程中创建EventLoop和Acceptor
     std::thread loopThread([&]() {
         EventLoop localLoop;
         loop = &localLoop;
 
-        InetAddress listenAddr(18085, "127.0.0.1");
+        InetAddress listenAddr(18086, "127.0.0.1");
         Acceptor localAcceptor(&localLoop, listenAddr, true);
         acceptor = &localAcceptor;
 
@@ -60,14 +83,22 @@ void test_acceptor_listen() {
 
         assert(acceptor->listenning());
 
+        // 通知主线程事件循环已就绪
+        {
+            std::lock_guard<std::mutex> lock(loopMutex);
+            loopReady = true;
+        }
+        loopCV.notify_one();
+
         // 运行事件循环
         localLoop.loop();
-
-        testDone = true;
     });
 
-    // 给事件循环一点时间启动
-    sleep(1);
+    // 等待事件循环启动
+    {
+        std::unique_lock<std::mutex> lock(loopMutex);
+        loopCV.wait(lock, [&]{ return loopReady; });
+    }
 
     // 创建客户端连接
     int clientfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -76,14 +107,18 @@ void test_acceptor_listen() {
     sockaddr_in serverAddr;
     bzero(&serverAddr, sizeof serverAddr);
     serverAddr.sin_family = AF_INET;
-    serverAddr.sin_port = htons(18085);
+    serverAddr.sin_port = htons(18086);
     inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr);
 
     int ret = connect(clientfd, (sockaddr*)&serverAddr, sizeof serverAddr);
     assert(ret == 0);
 
-    // 等待连接被接受
-    sleep(1);
+    // 等待连接被接受（最多等待5秒）
+    int waitCount = 0;
+    while (newConnectionCount == 0 && waitCount < 50) {
+        usleep(100000); // 100ms
+        waitCount++;
+    }
 
     // 验证连接是否被接受
     assert(newConnectionCount == 1);
@@ -107,14 +142,18 @@ void test_acceptor_listen() {
 void test_acceptor_multiple_connections() {
     std::cout << "=== Test Acceptor Multiple Connections ===" << std::endl;
 
-    // 重置计数器
+    // 重置计数器和连接信息
     newConnectionCount = 0;
     lastConnfd = -1;
-    if (lastPeerAddr) {
-        delete lastPeerAddr;
-        lastPeerAddr = nullptr;
+    lastPeerAddr.reset();
+    {
+        std::lock_guard<std::mutex> lock(connectionMutex);
+        connectionInfos.clear();
     }
 
+    std::mutex loopMutex;
+    std::condition_variable loopCV;
+    bool loopReady = false;
     EventLoop* loop = nullptr;
 
     // 在IO线程中创建EventLoop和Acceptor
@@ -122,48 +161,91 @@ void test_acceptor_multiple_connections() {
         EventLoop localLoop;
         loop = &localLoop;
 
-        InetAddress listenAddr(18086, "127.0.0.1");
+        InetAddress listenAddr(18087, "127.0.0.1");
         Acceptor acceptor(&localLoop, listenAddr, true);
 
         acceptor.setNewConnectionCallback(onNewConnection);
         acceptor.listen();
 
+        // 通知主线程事件循环已就绪
+        {
+            std::lock_guard<std::mutex> lock(loopMutex);
+            loopReady = true;
+        }
+        loopCV.notify_one();
+
         // 运行事件循环
         localLoop.loop();
     });
 
-    // 给事件循环一点时间启动
-    sleep(1);
+    // 等待事件循环启动
+    {
+        std::unique_lock<std::mutex> lock(loopMutex);
+        loopCV.wait(lock, [&]{ return loopReady; });
+    }
 
     // 创建多个客户端连接
     const int numConnections = 3;
-    int clientfds[numConnections];
+    std::vector<int> clientfds;
 
     for (int i = 0; i < numConnections; ++i) {
-        clientfds[i] = socket(AF_INET, SOCK_STREAM, 0);
-        assert(clientfds[i] >= 0);
+        int clientfd = socket(AF_INET, SOCK_STREAM, 0);
+        if (clientfd < 0) {
+            // 清理已创建的socket
+            for (int fd : clientfds) {
+                close(fd);
+            }
+            assert(false && "Failed to create socket");
+        }
+        clientfds.push_back(clientfd);
 
         sockaddr_in serverAddr;
         bzero(&serverAddr, sizeof serverAddr);
         serverAddr.sin_family = AF_INET;
-        serverAddr.sin_port = htons(18086);
+        serverAddr.sin_port = htons(18087);
         inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr);
 
-        int ret = connect(clientfds[i], (sockaddr*)&serverAddr, sizeof serverAddr);
-        assert(ret == 0);
+        int ret = connect(clientfd, (sockaddr*)&serverAddr, sizeof serverAddr);
+        if (ret != 0) {
+            // 清理已创建的socket
+            for (int fd : clientfds) {
+                close(fd);
+            }
+            assert(false && "Failed to connect");
+        }
 
-        // 等待连接被接受
-        sleep(1);
+        // 短暂等待，避免连接过快
+        usleep(10000); // 10ms
+    }
+
+    // 等待所有连接被接受（最多等待5秒）
+    int waitCount = 0;
+    while (newConnectionCount < numConnections && waitCount < 50) {
+        usleep(100000); // 100ms
+        waitCount++;
     }
 
     // 验证所有连接是否被接受
     assert(newConnectionCount == numConnections);
 
-    std::cout << "Total connections accepted: " << newConnectionCount << std::endl;
+    // 验证连接信息
+    {
+        std::lock_guard<std::mutex> lock(connectionMutex);
+        assert(connectionInfos.size() == numConnections);
 
-    // 清理
-    for (int i = 0; i < numConnections; ++i) {
-        close(clientfds[i]);
+        std::cout << "Total connections accepted: " << newConnectionCount << std::endl;
+        for (size_t i = 0; i < connectionInfos.size(); ++i) {
+            const auto& info = connectionInfos[i];
+            std::cout << "Connection " << i << ": fd=" << info.connfd 
+                      << ", peer=" << info.peerAddr.toIpPort() << std::endl;
+            assert(info.connfd >= 0);
+            close(info.connfd);
+        }
+    }
+
+    // 清理客户端socket
+    for (int fd : clientfds) {
+        close(fd);
     }
 
     // 退出事件循环
@@ -183,9 +265,7 @@ int main() {
     test_acceptor_multiple_connections();
 
     // 清理
-    if (lastPeerAddr) {
-        delete lastPeerAddr;
-    }
+    lastPeerAddr.reset();
 
     std::cout << "=== All Acceptor Tests Passed ===" << std::endl;
     return 0;

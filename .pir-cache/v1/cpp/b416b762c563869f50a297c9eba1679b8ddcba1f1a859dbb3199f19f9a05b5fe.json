@@ -1,0 +1,125 @@
+{
+  "deps": [
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[InetAddress.h]",
+    "include:[Timestamp.h]",
+    "include:[Buffer.h]",
+    "include:[iostream]",
+    "include:[string]",
+    "include:[unistd.h]",
+    "include:[sys/socket.h]",
+    "include:[arpa/inet.h]",
+    "include:[thread]",
+    "include:[vector]",
+    "include:[cstring]",
+    "include:[cassert]",
+    "include:[future]",
+    "include:[chrono]",
+    "include:[algorithm]",
+    "include:[Timer.h]"
+  ],
+  "file": "../tests/test_tcpconnection.cpp",
+  "hash": "b416b762c563869f50a297c9eba1679b8ddcba1f1a859dbb3199f19f9a05b5fe",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_connection_lifecycle"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_message_send_receive"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_high_water_mark"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_force_close"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_multithread_send"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_shutdown_write"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_send_with_buffer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_write_complete_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_close_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_message_send_receive_improved"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_edge_cases"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_repeated_close"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_operation_in_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_large_message"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_high_water_mark_improved"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_cross_thread_operations"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_memory_leak"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.893756",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

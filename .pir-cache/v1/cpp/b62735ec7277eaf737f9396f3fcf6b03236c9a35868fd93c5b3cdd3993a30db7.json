@@ -1,0 +1,82 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Logger.h]",
+    "include:[Timer.h]",
+    "include:[TimerQueue.h]",
+    "include:[thread]",
+    "include:[atomic]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[vector]",
+    "include:[memory]"
+  ],
+  "file": "../tests/test_timer_queue.cpp",
+  "hash": "b62735ec7277eaf737f9396f3fcf6b03236c9a35868fd93c5b3cdd3993a30db7",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_basic"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_cancel"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_concurrent"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_null_callback"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_cancel_during_execution"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_massive_timers"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_past_expiration"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_very_short_interval"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_same_expiration"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_queue_cleanup_on_exit"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.910370",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

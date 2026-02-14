@@ -1,0 +1,93 @@
+{
+  "deps": [
+    "include:[AsyncLoggingInit.h]",
+    "include:[Logger.h]",
+    "include:[Thread.h]",
+    "include:[iostream]",
+    "include:[unistd.h]",
+    "include:[sys/stat.h]",
+    "include:[sys/types.h]",
+    "include:[fstream]",
+    "include:[sstream]",
+    "include:[chrono]",
+    "include:[thread]"
+  ],
+  "file": "../tests/test_async_logging.cpp",
+  "hash": "a7063f6cc14c4a67df18edf32e5b058a24656f07ac878ad987706f65b5e03026",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testBasicLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "testMultiThreadLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test1_BasicLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test2_MultiThreadLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test3_NonExistentPath"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test4_LargeVolumeLogging"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test5_LogFileRolling"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test6_EmptyLog"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test7_VeryLongMessage"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test8_RapidStartStop"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test9_HighConcurrencyStress"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test10_ZeroLengthMessage"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.896949",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

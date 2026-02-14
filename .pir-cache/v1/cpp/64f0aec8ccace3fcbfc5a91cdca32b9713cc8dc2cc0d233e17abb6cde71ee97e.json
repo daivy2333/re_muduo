@@ -1,0 +1,110 @@
+{
+  "deps": [
+    "include:[Eventloop.h]",
+    "include:[Timer.h]",
+    "include:[Timestamp.h]",
+    "include:[Thread.h]",
+    "include:[CurrentThread.h]",
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[unistd.h]",
+    "include:[atomic]",
+    "include:[vector]",
+    "include:[memory]",
+    "include:[exception]",
+    "include:[stdexcept]"
+  ],
+  "file": "../tests/test_timer_integration.cpp",
+  "hash": "64f0aec8ccace3fcbfc5a91cdca32b9713cc8dc2cc0d233e17abb6cde71ee97e",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "timeout1"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "timeout2"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "timeout3"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_eventloop_timer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "thread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_cross_thread_timer"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "timerThread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timer_callback_exception"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_massive_timers"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_past_expiration"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_very_short_interval"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_same_expiration"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_cleanup_on_exit"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_cancel_during_execution"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_concurrent_operations"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.888904",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

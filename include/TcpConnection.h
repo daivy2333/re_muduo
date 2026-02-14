@@ -5,6 +5,8 @@
 #include "Callbacks.h"
 #include "noncopyable.h"
 #include "Buffer.h"
+#include "Timestamp.h"
+#include "Timer.h"
 #include <string>
 #include <memory>
 
@@ -49,6 +51,12 @@ public:
     void setHighWaterMarkCallback(const HighWaterMarkCallback& cb, size_t highWaterMark)
     { highWaterMarkCallback_ = cb; highWaterMark_ = highWaterMark; }
 
+    // 定时器相关接口
+    void setConnectionTimeout(double seconds);
+    void setIdleTimeout(double seconds);
+    void resetIdleTimer();
+    void enableKeepAlive(bool enable, int interval = 30);
+
     void connectEstablished();
     void connectDestroyed();
 
@@ -68,6 +76,14 @@ private:
     void shutdownInLoop();
     void forceCloseInLoop();
 
+    // 定时器相关私有方法
+    void setConnectionTimeoutInLoop(double seconds);
+    void resetIdleTimerInLoop();
+    void setupKeepAliveTimer();
+    void onConnectionTimeout();
+    void onIdleTimeout();
+    void onKeepAliveTimeout();
+
     EventLoop* loop_;
     std::string name_;
     std::unique_ptr<Socket> socket_;
@@ -82,6 +98,15 @@ private:
     CloseCallback closeCallback_;
     HighWaterMarkCallback highWaterMarkCallback_;
     size_t highWaterMark_;
+
+    // 定时器相关成员变量
+    TimerId connectionTimeoutTimerId_;
+    TimerId idleTimerId_;
+    TimerId keepAliveTimerId_;
+    double idleTimeout_;
+    double keepAliveInterval_;
+    bool keepAliveEnabled_;
+    Timestamp lastActivityTime_;
 
     Buffer inputBuffer_;
     Buffer outputBuffer_;

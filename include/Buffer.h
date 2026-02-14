@@ -103,22 +103,41 @@ public:
     {
         if (len < prependableBytes())
         {
+            // 空间足够，直接使用预留空间
             readerIndex_ -= len;
-            std::copy(static_cast<const char*>(data), static_cast<const char*>(data) + len, begin() + readerIndex_);
+            std::copy(static_cast<const char*>(data), 
+                    static_cast<const char*>(data) + len, 
+                    begin() + readerIndex_);
         }
         else
         {
-            // Not enough space, need to move data
+            // 空间不足，需要移动数据
             size_t readable = readableBytes();
-            std::copy(begin() + readerIndex_, begin() + writerIndex_, begin() + kCheapPrepend);
+            
+            // 计算需要的总空间
+            size_t needed = kCheapPrepend + len + readable;
+            if (buffer_.size() < needed)
+            {
+                // 需要扩容
+                buffer_.resize(needed);
+            }
+            
+            // 1. 首先，将现有数据移动到正确位置
+            // 将"nal data"从[8, 16)移动到[kCheapPrepend + len, kCheapPrepend + len + readable)
+            std::copy(begin() + readerIndex_, 
+                    begin() + writerIndex_, 
+                    begin() + kCheapPrepend + len);
+            
+            // 2. 然后，将prepend的数据复制到kCheapPrepend位置
+            std::copy(static_cast<const char*>(data), 
+                    static_cast<const char*>(data) + len, 
+                    begin() + kCheapPrepend);
+            
+            // 3. 更新索引
             readerIndex_ = kCheapPrepend;
-            writerIndex_ = readerIndex_ + readable;
-            ensureWritableBytes(len);
-            std::copy(static_cast<const char*>(data), static_cast<const char*>(data) + len, begin() + readerIndex_ - len);
-            readerIndex_ -= len;
+            writerIndex_ = kCheapPrepend + len + readable;
         }
     }
-
     void shrink(size_t reserve)
     {
         size_t readable = readableBytes();

@@ -1,0 +1,34 @@
+{
+  "deps": [
+    "include:[pthread.h]",
+    "include:[cassert]",
+    "include:[CurrentThread.h]",
+    "include:[noncopyable.h]"
+  ],
+  "file": "../include/Mutex.h",
+  "hash": "849cd9900658cc13225dc5d917875861902a04e6604a07824f7b1a1d74f67485",
+  "lang": "H",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "lock"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "unlock"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "MutexLockGuard"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.931189",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -1,0 +1,20 @@
+{
+  "deps": [
+    "include:[iostream]",
+    "include:[string]",
+    "include:[functional]",
+    "include:[noncopyable.h]",
+    "include:[LogStream.h]",
+    "include:[Timestamp.h]"
+  ],
+  "file": "../include/Logger.h",
+  "hash": "45ccdc3f7765602a1189921431d05072fc9525a76d311d36bf47e775ff9eaf03",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.921333",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

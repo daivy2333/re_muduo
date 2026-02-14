@@ -1,0 +1,129 @@
+{
+  "deps": [
+    "include:[Socket.h]",
+    "include:[InetAddress.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[unistd.h]",
+    "include:[sys/socket.h]",
+    "include:[netinet/in.h]",
+    "include:[netinet/tcp.h]",
+    "include:[arpa/inet.h]",
+    "include:[strings.h]",
+    "include:[fcntl.h]",
+    "include:[errno.h]"
+  ],
+  "file": "../tests/test_socket.cpp",
+  "hash": "b499ba065a2d1b19c255afa46aea393548a32046ae6e87c67b6909a4562f3aba",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_bind"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_listen"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_accept"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_tcp_nodelay"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_addr"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_port"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_keep_alive"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_shutdown_write"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_get_local_addr"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_noncopyable"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_destructor"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_accept_flags"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_tcp_nodelay_off"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_addr_off"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_reuse_port_off"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_keep_alive_off"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_shutdown_write_effect"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_multiple_bind"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_socket_get_local_addr_after_connect"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.912384",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

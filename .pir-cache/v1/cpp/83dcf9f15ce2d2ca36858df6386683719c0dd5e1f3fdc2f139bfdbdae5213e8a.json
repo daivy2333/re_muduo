@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[Socket.h]",
+    "include:[Channel.h]",
+    "include:[Buffer.h]",
+    "include:[Logger.h]",
+    "include:[unistd.h]",
+    "include:[errno.h]",
+    "include:[functional]"
+  ],
+  "file": "../src/base/TcpConnection.cpp",
+  "hash": "83dcf9f15ce2d2ca36858df6386683719c0dd5e1f3fdc2f139bfdbdae5213e8a",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.956015",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

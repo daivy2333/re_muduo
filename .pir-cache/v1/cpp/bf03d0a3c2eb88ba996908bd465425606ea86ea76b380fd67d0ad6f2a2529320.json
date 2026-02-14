@@ -1,0 +1,75 @@
+{
+  "deps": [
+    "include:[Channel.h]",
+    "include:[Eventloop.h]",
+    "include:[Logger.h]",
+    "include:[cassert]",
+    "include:[cerrno]",
+    "include:[iostream]",
+    "include:[memory]",
+    "include:[sys/epoll.h]",
+    "include:[sys/eventfd.h]",
+    "include:[sys/socket.h]",
+    "include:[thread]",
+    "include:[unistd.h]",
+    "include:[assert.h]"
+  ],
+  "file": "../tests/test_channel.cpp",
+  "hash": "bf03d0a3c2eb88ba996908bd465425606ea86ea76b380fd67d0ad6f2a2529320",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_creation"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_events"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_callbacks"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_tie"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_all_events"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_edge_cases"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_multithread"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_channel_remove"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.898107",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

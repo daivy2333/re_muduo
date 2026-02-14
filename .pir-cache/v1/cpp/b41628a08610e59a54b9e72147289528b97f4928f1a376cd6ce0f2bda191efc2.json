@@ -1,0 +1,87 @@
+{
+  "deps": [
+    "include:[Timestamp.h]",
+    "include:[iostream]",
+    "include:[cassert]",
+    "include:[thread]",
+    "include:[chrono]"
+  ],
+  "file": "../tests/test_timestamp.cpp",
+  "hash": "b41628a08610e59a54b9e72147289528b97f4928f1a376cd6ce0f2bda191efc2",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_default_constructor"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_constructor_with_microseconds"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_now"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_to_string"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_comparison_operators"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_valid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_invalid"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_addTime"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timeDifference"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_boundary_values"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_precision"
+    },
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "test_timestamp_format"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.899614",
+  "unit": {
+    "module": "tests",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

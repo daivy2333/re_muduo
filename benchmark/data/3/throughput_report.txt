@@ -1,0 +1,243 @@
+=== Throughput Benchmark Report ===
+Test Time: 1771003679679962362
+
+Clients: 10
+Payload: 64 bytes
+  QPS: 91295.89
+  Throughput: 11.14 MB/s
+  Avg Latency: 0.11 ms
+  P95 Latency: 0.22 ms
+  P99 Latency: 0.30 ms
+
+Clients: 10
+Payload: 1024 bytes
+  QPS: 91205.43
+  Throughput: 178.14 MB/s
+  Avg Latency: 0.11 ms
+  P95 Latency: 0.22 ms
+  P99 Latency: 0.29 ms
+
+Clients: 10
+Payload: 4096 bytes
+  QPS: 88453.23
+  Throughput: 691.04 MB/s
+  Avg Latency: 0.11 ms
+  P95 Latency: 0.22 ms
+  P99 Latency: 0.30 ms
+
+Clients: 10
+Payload: 16384 bytes
+  QPS: 79896.96
+  Throughput: 2496.78 MB/s
+  Avg Latency: 0.12 ms
+  P95 Latency: 0.24 ms
+  P99 Latency: 0.32 ms
+
+Clients: 10
+Payload: 32768 bytes
+  QPS: 75467.34
+  Throughput: 4716.71 MB/s
+  Avg Latency: 0.13 ms
+  P95 Latency: 0.25 ms
+  P99 Latency: 0.34 ms
+
+Clients: 10
+Payload: 65536 bytes
+  QPS: 58604.95
+  Throughput: 7325.62 MB/s
+  Avg Latency: 0.17 ms
+  P95 Latency: 0.34 ms
+  P99 Latency: 0.46 ms
+
+Clients: 100
+Payload: 64 bytes
+  QPS: 288583.20
+  Throughput: 35.23 MB/s
+  Avg Latency: 0.34 ms
+  P95 Latency: 0.63 ms
+  P99 Latency: 1.06 ms
+
+Clients: 100
+Payload: 1024 bytes
+  QPS: 281155.11
+  Throughput: 549.13 MB/s
+  Avg Latency: 0.35 ms
+  P95 Latency: 0.64 ms
+  P99 Latency: 1.07 ms
+
+Clients: 100
+Payload: 4096 bytes
+  QPS: 267197.38
+  Throughput: 2087.48 MB/s
+  Avg Latency: 0.37 ms
+  P95 Latency: 0.69 ms
+  P99 Latency: 1.11 ms
+
+Clients: 100
+Payload: 16384 bytes
+  QPS: 223005.04
+  Throughput: 6968.91 MB/s
+  Avg Latency: 0.44 ms
+  P95 Latency: 0.84 ms
+  P99 Latency: 1.29 ms
+
+Clients: 100
+Payload: 32768 bytes
+  QPS: 185332.10
+  Throughput: 11583.26 MB/s
+  Avg Latency: 0.54 ms
+  P95 Latency: 1.13 ms
+  P99 Latency: 1.62 ms
+
+Clients: 100
+Payload: 65536 bytes
+  QPS: 115669.23
+  Throughput: 14458.65 MB/s
+  Avg Latency: 0.86 ms
+  P95 Latency: 2.03 ms
+  P99 Latency: 2.60 ms
+
+Clients: 500
+Payload: 64 bytes
+  QPS: 275579.14
+  Throughput: 33.64 MB/s
+  Avg Latency: 1.80 ms
+  P95 Latency: 3.08 ms
+  P99 Latency: 5.15 ms
+
+Clients: 500
+Payload: 1024 bytes
+  QPS: 270744.46
+  Throughput: 528.80 MB/s
+  Avg Latency: 1.84 ms
+  P95 Latency: 3.05 ms
+  P99 Latency: 5.08 ms
+
+Clients: 500
+Payload: 4096 bytes
+  QPS: 256926.30
+  Throughput: 2007.24 MB/s
+  Avg Latency: 1.94 ms
+  P95 Latency: 3.31 ms
+  P99 Latency: 5.38 ms
+
+Clients: 500
+Payload: 16384 bytes
+  QPS: 203600.27
+  Throughput: 6362.51 MB/s
+  Avg Latency: 2.45 ms
+  P95 Latency: 3.83 ms
+  P99 Latency: 6.39 ms
+
+Clients: 500
+Payload: 32768 bytes
+  QPS: 159202.33
+  Throughput: 9950.15 MB/s
+  Avg Latency: 3.13 ms
+  P95 Latency: 5.29 ms
+  P99 Latency: 7.58 ms
+
+Clients: 500
+Payload: 65536 bytes
+  QPS: 88487.80
+  Throughput: 11060.97 MB/s
+  Avg Latency: 5.64 ms
+  P95 Latency: 10.86 ms
+  P99 Latency: 12.67 ms
+
+Clients: 1000
+Payload: 64 bytes
+  QPS: 321224.56
+  Throughput: 39.21 MB/s
+  Avg Latency: 3.10 ms
+  P95 Latency: 3.95 ms
+  P99 Latency: 6.24 ms
+
+Clients: 1000
+Payload: 1024 bytes
+  QPS: 306220.91
+  Throughput: 598.09 MB/s
+  Avg Latency: 3.25 ms
+  P95 Latency: 4.04 ms
+  P99 Latency: 6.59 ms
+
+Clients: 1000
+Payload: 4096 bytes
+  QPS: 280191.36
+  Throughput: 2189.00 MB/s
+  Avg Latency: 3.55 ms
+  P95 Latency: 4.56 ms
+  P99 Latency: 7.53 ms
+
+Clients: 1000
+Payload: 16384 bytes
+  QPS: 196058.43
+  Throughput: 6126.83 MB/s
+  Avg Latency: 5.08 ms
+  P95 Latency: 7.24 ms
+  P99 Latency: 12.74 ms
+
+Clients: 1000
+Payload: 32768 bytes
+  QPS: 150382.00
+  Throughput: 9398.87 MB/s
+  Avg Latency: 6.63 ms
+  P95 Latency: 10.56 ms
+  P99 Latency: 15.19 ms
+
+Clients: 1000
+Payload: 65536 bytes
+  QPS: 94146.49
+  Throughput: 11768.31 MB/s
+  Avg Latency: 10.59 ms
+  P95 Latency: 17.59 ms
+  P99 Latency: 24.66 ms
+
+Clients: 2000
+Payload: 64 bytes
+  QPS: 300710.05
+  Throughput: 36.71 MB/s
+  Avg Latency: 6.61 ms
+  P95 Latency: 7.98 ms
+  P99 Latency: 12.78 ms
+
+Clients: 2000
+Payload: 1024 bytes
+  QPS: 272194.79
+  Throughput: 531.63 MB/s
+  Avg Latency: 7.29 ms
+  P95 Latency: 8.74 ms
+  P99 Latency: 12.83 ms
+
+Clients: 2000
+Payload: 4096 bytes
+  QPS: 245538.22
+  Throughput: 1918.27 MB/s
+  Avg Latency: 8.11 ms
+  P95 Latency: 9.80 ms
+  P99 Latency: 14.60 ms
+
+Clients: 2000
+Payload: 16384 bytes
+  QPS: 194409.13
+  Throughput: 6075.29 MB/s
+  Avg Latency: 10.24 ms
+  P95 Latency: 12.81 ms
+  P99 Latency: 19.85 ms
+
+Clients: 2000
+Payload: 32768 bytes
+  QPS: 152372.41
+  Throughput: 9523.28 MB/s
+  Avg Latency: 13.06 ms
+  P95 Latency: 17.40 ms
+  P99 Latency: 26.89 ms
+
+Clients: 2000
+Payload: 65536 bytes
+  QPS: 93460.66
+  Throughput: 11682.58 MB/s
+  Avg Latency: 21.29 ms
+  P95 Latency: 31.36 ms
+  P99 Latency: 41.72 ms
+

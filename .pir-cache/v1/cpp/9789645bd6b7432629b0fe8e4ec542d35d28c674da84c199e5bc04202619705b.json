@@ -1,0 +1,48 @@
+{
+  "deps": [
+    "include:[benchmark_base.h]",
+    "include:[TcpServer.h]",
+    "include:[Eventloop.h]",
+    "include:[TcpConnection.h]",
+    "include:[Buffer.h]",
+    "include:[AsyncLoggingInit.h]",
+    "include:[Logger.h]",
+    "include:[iostream]",
+    "include:[iomanip]",
+    "include:[vector]",
+    "include:[thread]",
+    "include:[cstring]",
+    "include:[sys/socket.h]",
+    "include:[netinet/in.h]",
+    "include:[arpa/inet.h]",
+    "include:[unistd.h]",
+    "include:[fcntl.h]",
+    "include:[errno.h]",
+    "include:[memory]",
+    "include:[fstream]",
+    "include:[chrono]"
+  ],
+  "file": "../benchmark/latency_test.cpp",
+  "hash": "9789645bd6b7432629b0fe8e4ec542d35d28c674da84c199e5bc04202619705b",
+  "lang": "CPP",
+  "symbols": [
+    {
+      "attrs": {},
+      "kind": "func",
+      "name": "run_latency_tests"
+    },
+    {
+      "attrs": {
+        "entry": "true"
+      },
+      "kind": "func",
+      "name": "main"
+    }
+  ],
+  "timestamp": "2026-02-13T12:22:36.933378",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

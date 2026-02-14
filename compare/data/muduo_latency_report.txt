@@ -1,0 +1,41 @@
+=== Muduo Latency Test Report ===
+Test Time: 1771058552483607947
+Clients: 1000
+Duration: 60s
+
+Testing payload size: 64 bytes
+  Avg Latency: 38.357 ms
+  P50 Latency: 0.057 ms
+  P95 Latency: 132.025 ms
+  P99 Latency: 218.774 ms
+
+Testing payload size: 256 bytes
+  Avg Latency: 48.747 ms
+  P50 Latency: 0.078 ms
+  P95 Latency: 140.006 ms
+  P99 Latency: 247.987 ms
+
+Testing payload size: 1024 bytes
+  Avg Latency: 49.090 ms
+  P50 Latency: 0.084 ms
+  P95 Latency: 136.045 ms
+  P99 Latency: 240.030 ms
+
+Testing payload size: 4096 bytes
+  Avg Latency: 55.519 ms
+  P50 Latency: 0.130 ms
+  P95 Latency: 144.011 ms
+  P99 Latency: 248.060 ms
+
+Testing payload size: 16384 bytes
+  Avg Latency: 68.875 ms
+  P50 Latency: 84.272 ms
+  P95 Latency: 141.125 ms
+  P99 Latency: 250.153 ms
+
+Testing payload size: 65536 bytes
+  Avg Latency: 224.634 ms
+  P50 Latency: 247.958 ms
+  P95 Latency: 392.145 ms
+  P99 Latency: 515.974 ms
+

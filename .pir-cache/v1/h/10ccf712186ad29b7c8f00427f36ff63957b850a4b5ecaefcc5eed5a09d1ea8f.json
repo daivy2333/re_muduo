@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[string]",
+    "include:[vector]",
+    "include:[sys/types.h]"
+  ],
+  "file": "../include/ProcessInfo.h",
+  "hash": "10ccf712186ad29b7c8f00427f36ff63957b850a4b5ecaefcc5eed5a09d1ea8f",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.924025",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

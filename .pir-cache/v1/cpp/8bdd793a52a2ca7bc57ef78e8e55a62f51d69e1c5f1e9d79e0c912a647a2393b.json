@@ -1,0 +1,23 @@
+{
+  "deps": [
+    "include:[TcpServer.h]",
+    "include:[TcpConnection.h]",
+    "include:[Eventloop.h]",
+    "include:[Acceptor.h]",
+    "include:[Socket.h]",
+    "include:[Logger.h]",
+    "include:[stdio.h]",
+    "include:[assert.h]",
+    "include:[functional]"
+  ],
+  "file": "../src/base/TcpServer.cpp",
+  "hash": "8bdd793a52a2ca7bc57ef78e8e55a62f51d69e1c5f1e9d79e0c912a647a2393b",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.942585",
+  "unit": {
+    "module": "base",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

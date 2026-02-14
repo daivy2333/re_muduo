@@ -1,0 +1,29 @@
+{
+  "deps": [
+    "include:[echo_server_bench.h]",
+    "include:[TcpConnection.h]",
+    "include:[Buffer.h]",
+    "include:[Timestamp.h]",
+    "include:[AsyncLoggingInit.h]",
+    "include:[Logger.h]",
+    "include:[chrono]",
+    "include:[iostream]",
+    "include:[cstring]",
+    "include:[sys/socket.h]",
+    "include:[netinet/in.h]",
+    "include:[arpa/inet.h]",
+    "include:[unistd.h]",
+    "include:[fcntl.h]",
+    "include:[errno.h]"
+  ],
+  "file": "../benchmark/echo_server_bench.cpp",
+  "hash": "b33c6c4f006c9e4e16d466de5d81685b5763ecbfa5e09d81258179d14f75075c",
+  "lang": "CPP",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.932011",
+  "unit": {
+    "module": "benchmark",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}

@@ -205,6 +205,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Muduo install directory
+MUDUO_INSTALL_DIR:PATH=/home/daivy/muduo/build/release-cpp11
+
+//Muduo root directory
+MUDUO_ROOT:PATH=/home/daivy/muduo
+
 //Value Computed by CMake
 re_muduo_BINARY_DIR:STATIC=/home/daivy/projects/muduo_learn/re_muduo/build
 

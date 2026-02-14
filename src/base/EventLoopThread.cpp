@@ -69,11 +69,17 @@ void EventLoopThread::threadFunc()
         callback_(&loop);
     }
 
+    // 先设置 loop_，但暂时不通知
     {
         std::unique_lock<std::mutex> lock(mutex_);
         loop_ = &loop;
-        cond_.notify_one();
     }
+
+    // 设置进入事件循环的回调函数，在真正进入事件循环时才通知
+    loop.setLoopStartedCallback([this]() {
+        std::unique_lock<std::mutex> lock(mutex_);
+        cond_.notify_one();
+    });
 
     loop.loop();
     // assert(exiting_);

@@ -1,0 +1,17 @@
+{
+  "deps": [
+    "include:[noncopyable.h]",
+    "include:[string]",
+    "include:[sys/types.h]"
+  ],
+  "file": "../include/FileUtil.h",
+  "hash": "451c1bd841d6b4e8e038091d3600b17004fbd0399e84cc7e223e42c32917efb8",
+  "lang": "H",
+  "symbols": [],
+  "timestamp": "2026-02-13T12:22:36.926402",
+  "unit": {
+    "module": "include",
+    "role": "lib"
+  },
+  "version": "pir-analyzer-v1"
+}
